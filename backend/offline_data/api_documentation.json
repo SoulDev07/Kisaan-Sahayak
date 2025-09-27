@@ -1,0 +1,724 @@
+{
+  "generated_at": "2025-07-26T19:23:35.817542",
+  "total_routes": 107,
+  "backend_info": {
+    "base_url": "http://localhost:8000",
+    "total_modules": 12,
+    "methods_breakdown": {
+      "GET": 41,
+      "POST": 57,
+      "PUT": 7,
+      "DELETE": 8
+    },
+    "key_features": [
+      "Farmer Profile Management",
+      "Weather Integration",
+      "Crop Disease Detection",
+      "AI-Powered Crop Intelligence",
+      "RAG-based Chat System",
+      "Market Price Analysis",
+      "Soil Moisture Monitoring",
+      "Equipment Rental System",
+      "Crop Cycle Management",
+      "Speech-to-Text Processing",
+      "Voice Command Processing",
+      "Document Builder & PDF Generation"
+    ]
+  },
+  "route_categories": {
+    "main_app": {
+      "base_url": "/",
+      "route_count": 1,
+      "routes": [
+        {
+          "path": "/",
+          "method": "GET",
+          "function": "root",
+          "description": "Root endpoint with API information and features"
+        }
+      ]
+    },
+    "farmer_management": {
+      "base_url": "",
+      "route_count": 34,
+      "routes": [
+        {
+          "path": "/farmer/{farmer_id}",
+          "method": "GET",
+          "function": "get_farmer",
+          "description": "Get farmer details by ID"
+        },
+        {
+          "path": "/farmer/{farmer_id}/profile",
+          "method": "GET",
+          "function": "get_farmer_profile",
+          "description": "Get farmer profile information"
+        },
+        {
+          "path": "/farmer/{farmer_id}/profile",
+          "method": "PUT",
+          "function": "update_farmer_profile",
+          "description": "Update farmer profile"
+        },
+        {
+          "path": "/farmer/{farmer_id}/livestock",
+          "method": "GET",
+          "function": "get_farmer_livestock",
+          "description": "Get farmer's livestock data"
+        },
+        {
+          "path": "/farmer/{farmer_id}/livestock",
+          "method": "POST",
+          "function": "add_livestock",
+          "description": "Add livestock to farmer's record"
+        },
+        {
+          "path": "/farmer/{farmer_id}/livestock/{item_id}",
+          "method": "PUT",
+          "function": "update_livestock",
+          "description": "Update specific livestock item"
+        },
+        {
+          "path": "/farmer/{farmer_id}/livestock/{item_id}",
+          "method": "DELETE",
+          "function": "delete_livestock",
+          "description": "Delete specific livestock item"
+        },
+        {
+          "path": "/farmer/{farmer_id}/crops",
+          "method": "GET",
+          "function": "get_farmer_crops",
+          "description": "Get farmer's crop data"
+        },
+        {
+          "path": "/farmer/{farmer_id}/crops",
+          "method": "POST",
+          "function": "add_crop",
+          "description": "Add crop to farmer's record"
+        },
+        {
+          "path": "/farmer/{farmer_id}/crops/{crop_id}",
+          "method": "PUT",
+          "function": "update_crop",
+          "description": "Update specific crop"
+        },
+        {
+          "path": "/farmer/{farmer_id}/crops/{crop_id}",
+          "method": "DELETE",
+          "function": "delete_crop",
+          "description": "Delete specific crop"
+        },
+        {
+          "path": "/farmer/{farmer_id}/calendar",
+          "method": "GET",
+          "function": "get_farmer_calendar",
+          "description": "Get farmer's calendar events"
+        },
+        {
+          "path": "/farmer/{farmer_id}/calendar",
+          "method": "POST",
+          "function": "add_calendar_event",
+          "description": "Add calendar event"
+        },
+        {
+          "path": "/farmer/{farmer_id}/calendar/{event_id}",
+          "method": "PUT",
+          "function": "update_calendar_event",
+          "description": "Update calendar event"
+        },
+        {
+          "path": "/farmer/{farmer_id}/calendar/{event_id}",
+          "method": "DELETE",
+          "function": "delete_calendar_event",
+          "description": "Delete calendar event"
+        },
+        {
+          "path": "/farmer/{farmer_id}/calendar/ai-analysis",
+          "method": "GET",
+          "function": "get_calendar_ai_analysis",
+          "description": "Get AI analysis of farmer's calendar"
+        },
+        {
+          "path": "/farmer/{farmer_id}/market",
+          "method": "GET",
+          "function": "get_farmer_market",
+          "description": "Get farmer's market listings"
+        },
+        {
+          "path": "/farmer/{farmer_id}/market",
+          "method": "POST",
+          "function": "add_market_listing",
+          "description": "Add market listing"
+        },
+        {
+          "path": "/farmer/{farmer_id}/market/{listing_id}",
+          "method": "PUT",
+          "function": "update_market_listing",
+          "description": "Update market listing"
+        },
+        {
+          "path": "/farmer/{farmer_id}/market/{listing_id}",
+          "method": "DELETE",
+          "function": "delete_market_listing",
+          "description": "Delete market listing"
+        },
+        {
+          "path": "/farmer/{farmer_id}/chat",
+          "method": "GET",
+          "function": "get_farmer_chat_history",
+          "description": "Get farmer's chat history"
+        },
+        {
+          "path": "/farmer/{farmer_id}/chat",
+          "method": "POST",
+          "function": "add_chat_history",
+          "description": "Add chat history entry"
+        },
+        {
+          "path": "/farmer/{farmer_id}/chat/{chat_id}",
+          "method": "PUT",
+          "function": "update_chat_history",
+          "description": "Update chat history entry"
+        },
+        {
+          "path": "/farmer/{farmer_id}/chat/{chat_id}",
+          "method": "DELETE",
+          "function": "delete_chat_history",
+          "description": "Delete chat history entry"
+        },
+        {
+          "path": "/farmer/{farmer_id}/documents",
+          "method": "GET",
+          "function": "get_farmer_documents",
+          "description": "Get farmer's documents"
+        },
+        {
+          "path": "/farmer/{farmer_id}/documents",
+          "method": "POST",
+          "function": "add_document",
+          "description": "Add document to farmer's record"
+        },
+        {
+          "path": "/farmer/{farmer_id}/documents/{doc_id}",
+          "method": "PUT",
+          "function": "update_document",
+          "description": "Update document"
+        },
+        {
+          "path": "/farmer/{farmer_id}/documents/{doc_id}",
+          "method": "DELETE",
+          "function": "delete_document",
+          "description": "Delete document"
+        },
+        {
+          "path": "/farmer/{farmer_id}/vectors",
+          "method": "GET",
+          "function": "get_farmer_vectors",
+          "description": "Get farmer's vector data"
+        },
+        {
+          "path": "/farmer/{farmer_id}/vectors",
+          "method": "POST",
+          "function": "set_vectors",
+          "description": "Set vector data for farmer"
+        },
+        {
+          "path": "/farmer/{farmer_id}/vectors",
+          "method": "PUT",
+          "function": "update_vectors",
+          "description": "Update vector data"
+        },
+        {
+          "path": "/farmer/{farmer_id}/vectors",
+          "method": "DELETE",
+          "function": "delete_vectors",
+          "description": "Delete vector data"
+        },
+        {
+          "path": "/farmer/{farmer_id}/space-suggestions",
+          "method": "POST",
+          "function": "add_space_suggestions",
+          "description": "Add space suggestions with image analysis"
+        },
+        {
+          "path": "/farmer",
+          "method": "POST",
+          "function": "create_farmer",
+          "description": "Create new farmer profile"
+        }
+      ]
+    },
+    "weather": {
+      "base_url": "",
+      "route_count": 8,
+      "routes": [
+        {
+          "path": "/weather/city",
+          "method": "GET",
+          "function": "weather_by_city",
+          "description": "Get weather data by city name"
+        },
+        {
+          "path": "/weather/coords",
+          "method": "GET",
+          "function": "weather_by_coords",
+          "description": "Get weather data by coordinates"
+        },
+        {
+          "path": "/weather/forecast/city",
+          "method": "GET",
+          "function": "forecast_by_city",
+          "description": "Get weather forecast by city"
+        },
+        {
+          "path": "/weather/forecast/coords",
+          "method": "GET",
+          "function": "forecast_by_coords",
+          "description": "Get weather forecast by coordinates"
+        },
+        {
+          "path": "/weather/air_quality",
+          "method": "GET",
+          "function": "air_quality",
+          "description": "Get air quality data"
+        },
+        {
+          "path": "/weather/geocode",
+          "method": "GET",
+          "function": "geocode",
+          "description": "Geocode city or reverse geocode coordinates"
+        },
+        {
+          "path": "/weather/map_tile_url",
+          "method": "GET",
+          "function": "map_tile_url",
+          "description": "Get weather map tile URL"
+        },
+        {
+          "path": "/weather/ai-analysis",
+          "method": "GET",
+          "function": "weather_ai_analysis",
+          "description": "Get AI-powered weather analysis for farmer"
+        }
+      ]
+    },
+    "crop_disease": {
+      "base_url": "",
+      "route_count": 1,
+      "routes": [
+        {
+          "path": "/crop-disease/detect",
+          "method": "POST",
+          "function": "detect_crop_disease",
+          "description": "Detect crop disease from uploaded image"
+        }
+      ]
+    },
+    "crop_intelligence": {
+      "base_url": "",
+      "route_count": 6,
+      "routes": [
+        {
+          "path": "/crop-intelligence/combos",
+          "method": "GET",
+          "function": "get_crop_combos",
+          "description": "Get crop combination recommendations"
+        },
+        {
+          "path": "/crop-intelligence/recommendations",
+          "method": "GET",
+          "function": "get_recommendations",
+          "description": "Get general crop recommendations"
+        },
+        {
+          "path": "/crop-intelligence/recommend",
+          "method": "POST",
+          "function": "recommend_crops",
+          "description": "Get personalized crop recommendations"
+        },
+        {
+          "path": "/crop-intelligence/farming-techniques",
+          "method": "POST",
+          "function": "get_farming_techniques",
+          "description": "Get farming technique recommendations"
+        },
+        {
+          "path": "/crop-intelligence/search",
+          "method": "GET",
+          "function": "vector_search_endpoint",
+          "description": "Perform vector search across crop data"
+        },
+        {
+          "path": "/crop-intelligence/health",
+          "method": "GET",
+          "function": "health_check",
+          "description": "Health check for crop intelligence service"
+        }
+      ]
+    },
+    "chat_rag": {
+      "base_url": "",
+      "route_count": 1,
+      "routes": [
+        {
+          "path": "/chat/rag",
+          "method": "POST",
+          "function": "chat_rag_endpoint",
+          "description": "RAG-based chat endpoint with vector search"
+        }
+      ]
+    },
+    "chat_rag_whatsapp": {
+      "base_url": "",
+      "route_count": 1,
+      "routes": [
+        {
+          "path": "/chat/rag/whatsapp",
+          "method": "POST",
+          "function": "chat_rag_whatsapp_endpoint",
+          "description": "WhatsApp-specific RAG chat endpoint"
+        }
+      ]
+    },
+    "market": {
+      "base_url": "",
+      "route_count": 2,
+      "routes": [
+        {
+          "path": "/market/prices",
+          "method": "GET",
+          "function": "get_prices",
+          "description": "Get market prices for commodities"
+        },
+        {
+          "path": "/market/ai-recommendations",
+          "method": "POST",
+          "function": "market_ai_recommendations",
+          "description": "Get AI-powered market insights and recommendations"
+        }
+      ]
+    },
+    "soil_moisture": {
+      "base_url": "",
+      "route_count": 2,
+      "routes": [
+        {
+          "path": "/soil-moisture",
+          "method": "GET",
+          "function": "get_soil_data",
+          "description": "Get soil moisture data"
+        },
+        {
+          "path": "/soil-moisture/ai-suggestion",
+          "method": "POST",
+          "function": "soil_moisture_ai_suggestion",
+          "description": "Get AI suggestions based on soil moisture data"
+        }
+      ]
+    },
+    "rental": {
+      "base_url": "",
+      "route_count": 7,
+      "routes": [
+        {
+          "path": "/rental",
+          "method": "POST",
+          "function": "rental_search",
+          "description": "Search for rental equipment with vector similarity"
+        },
+        {
+          "path": "/rental/activity",
+          "method": "GET",
+          "function": "get_rental_activity",
+          "description": "Get farmer's rental activity (bought/sold items and listings)"
+        },
+        {
+          "path": "/rental/featured",
+          "method": "GET",
+          "function": "get_rental_featured",
+          "description": "Get featured rental listings"
+        },
+        {
+          "path": "/rental/list",
+          "method": "POST",
+          "function": "list_equipment",
+          "description": "List new equipment for rental"
+        },
+        {
+          "path": "/rental/bookings",
+          "method": "GET",
+          "function": "get_rental_bookings",
+          "description": "Get rental bookings for farmer"
+        },
+        {
+          "path": "/rental/earnings",
+          "method": "GET",
+          "function": "get_rental_earnings",
+          "description": "Get rental earnings for farmer"
+        },
+        {
+          "path": "/rental/book",
+          "method": "POST",
+          "function": "book_equipment",
+          "description": "Book rental equipment"
+        }
+      ]
+    },
+    "crop_cycle": {
+      "base_url": "/crop-cycle",
+      "route_count": 13,
+      "routes": [
+        {
+          "path": "/crop-cycle/analyze-crop",
+          "method": "POST",
+          "function": "analyze_crop",
+          "description": "Analyze crop with AI insights"
+        },
+        {
+          "path": "/crop-cycle/corporate-buyers/{crop}",
+          "method": "GET",
+          "function": "get_corporate_buyers",
+          "description": "Get corporate buyers for specific crop"
+        },
+        {
+          "path": "/crop-cycle/loan-schemes",
+          "method": "GET",
+          "function": "get_loan_schemes",
+          "description": "Get available loan schemes"
+        },
+        {
+          "path": "/crop-cycle/insurance-plans",
+          "method": "GET",
+          "function": "get_insurance_plans",
+          "description": "Get available insurance plans"
+        },
+        {
+          "path": "/crop-cycle/certifications",
+          "method": "GET",
+          "function": "get_certifications",
+          "description": "Get available certifications"
+        },
+        {
+          "path": "/crop-cycle/solar-schemes",
+          "method": "GET",
+          "function": "get_solar_schemes",
+          "description": "Get solar energy schemes"
+        },
+        {
+          "path": "/crop-cycle/soil-testing-labs",
+          "method": "GET",
+          "function": "get_soil_testing_labs",
+          "description": "Get soil testing lab information"
+        },
+        {
+          "path": "/crop-cycle/mandi-info",
+          "method": "GET",
+          "function": "get_mandi_info",
+          "description": "Get mandi (market) information"
+        },
+        {
+          "path": "/crop-cycle/government-schemes",
+          "method": "GET",
+          "function": "get_government_schemes",
+          "description": "Get government schemes information"
+        },
+        {
+          "path": "/crop-cycle/generate-insights",
+          "method": "POST",
+          "function": "generate_insights",
+          "description": "Generate AI insights for crop cycle"
+        },
+        {
+          "path": "/crop-cycle/search",
+          "method": "GET",
+          "function": "search_crop_cycle",
+          "description": "Search crop cycle data"
+        },
+        {
+          "path": "/crop-cycle/initiate-call",
+          "method": "POST",
+          "function": "initiate_call",
+          "description": "Initiate voice call for crop cycle assistance"
+        },
+        {
+          "path": "/crop-cycle/health",
+          "method": "GET",
+          "function": "health_check",
+          "description": "Health check for crop cycle service"
+        }
+      ]
+    },
+    "speech_to_text": {
+      "base_url": "/speech-to-text",
+      "route_count": 1,
+      "routes": [
+        {
+          "path": "/speech-to-text/",
+          "method": "POST",
+          "function": "speech_to_text",
+          "description": "Convert speech audio to text with language detection"
+        }
+      ]
+    },
+    "voice_command": {
+      "base_url": "",
+      "route_count": 1,
+      "routes": [
+        {
+          "path": "/voice-command/",
+          "method": "POST",
+          "function": "process_voice_command",
+          "description": "Process voice commands and execute actions"
+        }
+      ]
+    },
+    "document_builder": {
+      "base_url": "",
+      "route_count": 17,
+      "routes": [
+        {
+          "path": "/health",
+          "method": "GET",
+          "function": "health_check",
+          "description": "Health check for document builder service"
+        },
+        {
+          "path": "/initialize",
+          "method": "POST",
+          "function": "initialize_session",
+          "description": "Initialize document builder session"
+        },
+        {
+          "path": "/chat",
+          "method": "POST",
+          "function": "chat_endpoint",
+          "description": "Chat endpoint for document builder"
+        },
+        {
+          "path": "/document/start",
+          "method": "POST",
+          "function": "start_document_session",
+          "description": "Start new document building session"
+        },
+        {
+          "path": "/document/answer",
+          "method": "POST",
+          "function": "process_answer",
+          "description": "Process answer in document building session"
+        },
+        {
+          "path": "/document/download/{session_id}",
+          "method": "GET",
+          "function": "download_document",
+          "description": "Download generated document"
+        },
+        {
+          "path": "/document/generate-pdf/{session_id}",
+          "method": "POST",
+          "function": "generate_pdf",
+          "description": "Generate PDF from session data"
+        },
+        {
+          "path": "/document/download-pdf/{session_id}",
+          "method": "GET",
+          "function": "download_pdf",
+          "description": "Download generated PDF"
+        },
+        {
+          "path": "/schemes/search",
+          "method": "GET",
+          "function": "search_schemes",
+          "description": "Search government schemes"
+        },
+        {
+          "path": "/schemes/{scheme_name}",
+          "method": "GET",
+          "function": "get_scheme_details",
+          "description": "Get specific scheme details"
+        },
+        {
+          "path": "/templates",
+          "method": "GET",
+          "function": "get_templates",
+          "description": "Get available document templates"
+        },
+        {
+          "path": "/stats",
+          "method": "GET",
+          "function": "get_stats",
+          "description": "Get system statistics"
+        },
+        {
+          "path": "/test-basic-pdf",
+          "method": "POST",
+          "function": "test_basic_pdf",
+          "description": "Test basic PDF generation"
+        },
+        {
+          "path": "/generate-pdf-with-ai-json",
+          "method": "POST",
+          "function": "generate_pdf_with_ai_json",
+          "description": "Generate PDF with AI using JSON input"
+        },
+        {
+          "path": "/generate-pdf-with-ai",
+          "method": "POST",
+          "function": "generate_pdf_with_ai",
+          "description": "Generate PDF with AI assistance"
+        },
+        {
+          "path": "/generate-pdf-json",
+          "method": "POST",
+          "function": "generate_pdf_json",
+          "description": "Generate PDF from JSON data"
+        },
+        {
+          "path": "/generate-pdf",
+          "method": "POST",
+          "function": "generate_pdf_endpoint",
+          "description": "Generate PDF endpoint"
+        }
+      ]
+    }
+  },
+  "data_availability": {
+    "api_fetched_data.json": {
+      "records_count": "N/A",
+      "last_updated": "2025-07-26T19:23:29.307558",
+      "source": "api_routes",
+      "has_embeddings": true
+    },
+    "comprehensive_search_index.json": {
+      "records_count": "N/A",
+      "last_updated": "Unknown",
+      "source": "Unknown",
+      "has_embeddings": true
+    },
+    "parameterized_routes_data.json": {
+      "status": "error_reading_file"
+    },
+    "processed_crop_specific_data.json": {
+      "records_count": "N/A",
+      "last_updated": "2025-07-26T19:22:11.367056",
+      "source": "existing_file",
+      "has_embeddings": true
+    },
+    "processed_data.json": {
+      "records_count": "N/A",
+      "last_updated": "2025-07-26T19:22:11.383645",
+      "source": "existing_file",
+      "has_embeddings": true
+    },
+    "sample_route_templates.json": {
+      "records_count": "N/A",
+      "last_updated": "2025-07-26T19:23:29.574752",
+      "source": "sample_templates",
+      "has_embeddings": false
+    }
+  },
+  "offline_capabilities": {
+    "data_files_created": 6,
+    "search_enabled": true,
+    "embeddings_available": true
+  }
+}

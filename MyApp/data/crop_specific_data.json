@@ -1,0 +1,572 @@
+{
+    "cropSpecificSchemes": [
+      {
+        "cropName": "Rice",
+        "schemes": [
+          {
+            "schemeName": "National Food Security Mission (NFSM)",
+            "type": "Production Enhancement & Farmer Economy",
+            "description": "Enhances the production of critical food grains through strategies of area expansion and productivity enhancement in identified districts across the country. Beyond increasing production, NFSM also focuses on restoring soil fertility and productivity at the individual farm level, enhancing farm-level economy, and facilitating technology transfer through demonstrations and training. [cite: 24]",
+            "applicableComponent": "NFSM-Rice [cite: 24]",
+            "keyBenefits": [
+              "Assistance for seeds, inputs, demonstrations, and training. [cite: 24]",
+              "Mandatory use of Soil Health Cards for demonstration beneficiaries. [cite: 120, 25]",
+              "Minimum 33% allocation for small and marginal farmers, and 30% for women farmers. [cite: 122, 27]"
+            ],
+            "eligibilityNotes": "All farmers are generally entitled to avail assistance for various components, with a maximum limit of 5 hectares in a season. [cite: 120, 27]",
+            "applicationProcess": "Operates through a structured, multi-level planning and approval mechanism (District, State, DAC&FW). Funds are distributed through Direct Benefit Transfer (DBT) via Aadhaar-based authentication or Point of Sale (POS) systems. [cite: 124, 125, 126, 25]",
+            "requiredDocuments": "Soil Health Card (mandatory for demonstrations) and Aadhaar-based authentication from the State Farmer's Registry. [cite: 128, 25]"
+          },
+          {
+            "schemeName": "Pradhan Mantri Annadata Aay Sanrakshan Abhiyan (PM-AASHA) - Price Support Scheme (PSS)",
+            "type": "Market Price Support",
+            "description": "Aims to ensure remunerative prices for farmers by procuring notified crops at the Minimum Support Price (MSP) when market prices fall below the MSP during peak harvesting periods. [cite: 146, 32]",
+            "applicableCropMention": "Paddy [cite: 153, 43]",
+            "procurementLimit": "Initially set at a maximum of 25% of the state's production for a particular season. If a state achieves this quantity and requests further procurement, it can be considered up to 25% of the national production. [cite: 146, 32]",
+            "eligibilityNotes": "Farmers must sell their produce at designated APMC (Agricultural Produce Market Committee) centers opened by the Nodal procurement agency. Farmers must be pre-registered, and their produce must meet Fair Average Quality (FAQ) standards. [cite: 149, 43, 37]",
+            "applicationProcess": "Primarily offline, involving interaction with procurement centers. Farmers typically register through state portals or local agencies. When market prices drop below MSP, procurement centers are opened at APMC yards by state and central nodal agencies. [cite: 150, 43]",
+            "requiredDocuments": "Identification proof (such as Aadhaar or PAN card), land documents (e.g., 7/12, 8-A extracts), bank account details, agricultural documents (detailing crop information), an income certificate, and photographs. [cite: 152, 43]"
+          }
+        ]
+      },
+      {
+        "cropName": "Wheat",
+        "schemes": [
+          {
+            "schemeName": "National Food Security Mission (NFSM)",
+            "type": "Production Enhancement & Farmer Economy",
+            "description": "Enhances the production of critical food grains through strategies of area expansion and productivity enhancement in identified districts across the country. Beyond increasing production, NFSM also focuses on restoring soil fertility and productivity at the individual farm level, enhancing farm-level economy, and facilitating technology transfer through demonstrations and training. [cite: 24]",
+            "applicableComponent": "NFSM-Wheat [cite: 24]",
+            "keyBenefits": [
+              "Assistance for seeds, inputs, demonstrations, and training. [cite: 24]",
+              "Mandatory use of Soil Health Cards for demonstration beneficiaries. [cite: 120, 25]",
+              "Minimum 33% allocation for small and marginal farmers, and 30% for women farmers. [cite: 122, 27]"
+            ],
+            "eligibilityNotes": "All farmers are generally entitled to avail assistance for various components, with a maximum limit of 5 hectares in a season. [cite: 120, 27]",
+            "applicationProcess": "Operates through a structured, multi-level planning and approval mechanism (District, State, DAC&FW). Funds are distributed through Direct Benefit Transfer (DBT) via Aadhaar-based authentication or Point of Sale (POS) systems. [cite: 124, 125, 126, 25]",
+            "requiredDocuments": "Soil Health Card (mandatory for demonstrations) and Aadhaar-based authentication from the State Farmer's Registry. [cite: 128, 25]"
+          },
+          {
+            "schemeName": "Pradhan Mantri Annadata Aay Sanrakshan Abhiyan (PM-AASHA) - Price Support Scheme (PSS)",
+            "type": "Market Price Support",
+            "description": "Aims to ensure remunerative prices for farmers by procuring notified crops at the Minimum Support Price (MSP) when market prices fall below the MSP during peak harvesting periods. [cite: 146, 32]",
+            "applicableCropMention": "Wheat [cite: 153, 43]",
+            "procurementLimit": "Initially set at a maximum of 25% of the state's production for a particular season. If a state achieves this quantity and requests further procurement, it can be considered up to 25% of the national production. [cite: 146, 32]",
+            "eligibilityNotes": "Farmers must sell their produce at designated APMC (Agricultural Produce Market Committee) centers opened by the Nodal procurement agency. Farmers must be pre-registered, and their produce must meet Fair Average Quality (FAQ) standards. [cite: 149, 43, 37]",
+            "applicationProcess": "Primarily offline, involving interaction with procurement centers. Farmers typically register through state portals or local agencies. When market prices drop below MSP, procurement centers are opened at APMC yards by state and central nodal agencies. [cite: 150, 43]",
+            "requiredDocuments": "Identification proof (such as Aadhaar or PAN card), land documents (e.g., 7/12, 8-A extracts), bank account details, agricultural documents (detailing crop information), an income certificate, and photographs. [cite: 152, 43]"
+          }
+        ]
+      },
+      {
+        "cropName": "Pulses (Tur, Urad, Masur, Moong, Gram)",
+        "schemes": [
+          {
+            "schemeName": "National Food Security Mission (NFSM)",
+            "type": "Production Enhancement & Farmer Economy",
+            "description": "Enhances the production of critical food grains through strategies of area expansion and productivity enhancement in identified districts across the country. Beyond increasing production, NFSM also focuses on restoring soil fertility and productivity at the individual farm level, enhancing farm-level economy, and facilitating technology transfer through demonstrations and training. [cite: 24]",
+            "applicableComponent": "NFSM-Pulses [cite: 24]",
+            "keyBenefits": [
+              "Assistance for seeds, inputs, demonstrations, and training. [cite: 24]",
+              "Mandatory use of Soil Health Cards for demonstration beneficiaries. [cite: 120, 25]",
+              "Minimum 33% allocation for small and marginal farmers, and 30% for women farmers. [cite: 122, 27]"
+            ],
+            "eligibilityNotes": "All farmers are generally entitled to avail assistance for various components, with a maximum limit of 5 hectares in a season. [cite: 120, 27]",
+            "applicationProcess": "Operates through a structured, multi-level planning and approval mechanism (District, State, DAC&FW). Funds are distributed through Direct Benefit Transfer (DBT) via Aadhaar-based authentication or Point of Sale (POS) systems. [cite: 124, 125, 126, 25]",
+            "requiredDocuments": "Soil Health Card (mandatory for demonstrations) and Aadhaar-based authentication from the State Farmer's Registry. [cite: 128, 25]"
+          },
+          {
+            "schemeName": "Pradhan Mantri Annadata Aay Sanrakshan Abhiyan (PM-AASHA) - Price Support Scheme (PSS)",
+            "type": "Market Price Support",
+            "description": "Aims to ensure remunerative prices for farmers by procuring notified crops at the Minimum Support Price (MSP) when market prices fall below the MSP during peak harvesting periods. [cite: 146, 32]",
+            "applicableCropMention": "Notified pulses (Tur, Urad, Masur, Moong, Gram) [cite: 147, 153, 32, 43]",
+            "procurementLimit": "Initially set at a maximum of 25% of the state's production for a particular season. If a state achieves this quantity and requests further procurement, it can be considered up to 25% of the national production. [cite: 146, 32] Specific commitment for 100% procurement of Tur, Urad, and Masur until 2028-29. [cite: 147, 32]",
+            "eligibilityNotes": "Farmers must sell their produce at designated APMC (Agricultural Produce Market Committee) centers opened by the Nodal procurement agency. Farmers must be pre-registered, and their produce must meet Fair Average Quality (FAQ) standards. [cite: 149, 43, 37]",
+            "applicationProcess": "Primarily offline, involving interaction with procurement centers. Farmers typically register through state portals or local agencies. When market prices drop below MSP, procurement centers are opened at APMC yards by state and central nodal agencies. [cite: 150, 43]",
+            "requiredDocuments": "Identification proof (such as Aadhaar or PAN card), land documents (e.g., 7/12, 8-A extracts), bank account details, agricultural documents (detailing crop information), an income certificate, and photographs. [cite: 152, 43]"
+          }
+        ]
+      },
+      {
+        "cropName": "Coarse Cereals / Nutri-Cereals (Bajra, Jowar, Maize)",
+        "schemes": [
+          {
+            "schemeName": "National Food Security Mission (NFSM)",
+            "type": "Production Enhancement & Farmer Economy",
+            "description": "Enhances the production of critical food grains through strategies of area expansion and productivity enhancement in identified districts across the country. Beyond increasing production, NFSM also focuses on restoring soil fertility and productivity at the individual farm level, enhancing farm-level economy, and facilitating technology transfer through demonstrations and training. [cite: 24]",
+            "applicableComponent": "NFSM-Coarse Cereals and Sub-Mission on Nutri-Cereals [cite: 24]",
+            "keyBenefits": [
+              "Assistance for seeds, inputs, demonstrations, and training. [cite: 24]",
+              "Mandatory use of Soil Health Cards for demonstration beneficiaries. [cite: 120, 25]",
+              "Minimum 33% allocation for small and marginal farmers, and 30% for women farmers. [cite: 122, 27]"
+            ],
+            "eligibilityNotes": "All farmers are generally entitled to avail assistance for various components, with a maximum limit of 5 hectares in a season. [cite: 120, 27]",
+            "applicationProcess": "Operates through a structured, multi-level planning and approval mechanism (District, State, DAC&FW). Funds are distributed through Direct Benefit Transfer (DBT) via Aadhaar-based authentication or Point of Sale (POS) systems. [cite: 124, 125, 126, 25]",
+            "requiredDocuments": "Soil Health Card (mandatory for demonstrations) and Aadhaar-based authentication from the State Farmer's Registry. [cite: 128, 25]"
+          },
+          {
+            "schemeName": "Pradhan Mantri Annadata Aay Sanrakshan Abhiyan (PM-AASHA) - Price Support Scheme (PSS)",
+            "type": "Market Price Support",
+            "description": "Aims to ensure remunerative prices for farmers by procuring notified crops at the Minimum Support Price (MSP) when market prices fall below the MSP during peak harvesting periods. [cite: 146, 32]",
+            "applicableCropMention": "Bajra, Jowar, Maize [cite: 153, 43]",
+            "procurementLimit": "Initially set at a maximum of 25% of the state's production for a particular season. If a state achieves this quantity and requests further procurement, it can be considered up to 25% of the national production. [cite: 146, 32]",
+            "eligibilityNotes": "Farmers must sell their produce at designated APMC (Agricultural Produce Market Committee) centers opened by the Nodal procurement agency. Farmers must be pre-registered, and their produce must meet Fair Average Quality (FAQ) standards. [cite: 149, 43, 37]",
+            "applicationProcess": "Primarily offline, involving interaction with procurement centers. Farmers typically register through state portals or local agencies. When market prices drop below MSP, procurement centers are opened at APMC yards by state and central nodal agencies. [cite: 150, 43]",
+            "requiredDocuments": "Identification proof (such as Aadhaar or PAN card), land documents (e.g., 7/12, 8-A extracts), bank account details, agricultural documents (detailing crop information), an income certificate, and photographs. [cite: 152, 43]"
+          }
+        ]
+      },
+      {
+        "cropName": "Cotton",
+        "schemes": [
+          {
+            "schemeName": "National Food Security Mission (NFSM)",
+            "type": "Production Enhancement & Farmer Economy",
+            "description": "Enhances the production of critical food grains, including commercial crops, through strategies of area expansion and productivity enhancement in identified districts across the country. [cite: 24]",
+            "applicableComponent": "NFSM-Commercial Crops [cite: 24]",
+            "keyBenefits": [
+              "Assistance for seeds, inputs, demonstrations, and training. [cite: 24]",
+              "Mandatory use of Soil Health Cards for demonstration beneficiaries. [cite: 120, 25]",
+              "Minimum 33% allocation for small and marginal farmers, and 30% for women farmers. [cite: 122, 27]"
+            ],
+            "eligibilityNotes": "All farmers are generally entitled to avail assistance for various components, with a maximum limit of 5 hectares in a season. [cite: 120, 27]",
+            "applicationProcess": "Operates through a structured, multi-level planning and approval mechanism (District, State, DAC&FW). Funds are distributed through Direct Benefit Transfer (DBT) via Aadhaar-based authentication or Point of Sale (POS) systems. [cite: 124, 125, 126, 25]",
+            "requiredDocuments": "Soil Health Card (mandatory for demonstrations) and Aadhaar-based authentication from the State Farmer's Registry. [cite: 128, 25]"
+          },
+          {
+            "schemeName": "Pradhan Mantri Annadata Aay Sanrakshan Abhiyan (PM-AASHA) - Price Support Scheme (PSS)",
+            "type": "Market Price Support",
+            "description": "Aims to ensure remunerative prices for farmers by procuring notified crops at the Minimum Support Price (MSP) when market prices fall below the MSP during peak harvesting periods. [cite: 146, 32]",
+            "applicableCropMention": "Cotton [cite: 153, 43]",
+            "procurementLimit": "Initially set at a maximum of 25% of the state's production for a particular season. If a state achieves this quantity and requests further procurement, it can be considered up to 25% of the national production. [cite: 146, 32]",
+            "eligibilityNotes": "Farmers must sell their produce at designated APMC (Agricultural Produce Market Committee) centers opened by the Nodal procurement agency. Farmers must be pre-registered, and their produce must meet Fair Average Quality (FAQ) standards. [cite: 149, 43, 37]",
+            "applicationProcess": "Primarily offline, involving interaction with procurement centers. Farmers typically register through state portals or local agencies. When market prices drop below MSP, procurement centers are opened at APMC yards by state and central nodal agencies. [cite: 150, 43]",
+            "requiredDocuments": "Identification proof (such as Aadhaar or PAN card), land documents (e.g., 7/12, 8-A extracts), bank account details, agricultural documents (detailing crop information), an income certificate, and photographs. [cite: 152, 43]"
+          }
+        ]
+      },
+      {
+        "cropName": "Groundnut",
+        "schemes": [
+          {
+            "schemeName": "Pradhan Mantri Annadata Aay Sanrakshan Abhiyan (PM-AASHA) - Price Support Scheme (PSS)",
+            "type": "Market Price Support",
+            "description": "Aims to ensure remunerative prices for farmers by procuring notified crops at the Minimum Support Price (MSP) when market prices fall below the MSP during peak harvesting periods. [cite: 146, 32]",
+            "applicableCropMention": "Groundnut [cite: 153, 43]",
+            "procurementLimit": "Initially set at a maximum of 25% of the state's production for a particular season. If a state achieves this quantity and requests further procurement, it can be considered up to 25% of the national production. [cite: 146, 32]",
+            "eligibilityNotes": "Farmers must sell their produce at designated APMC (Agricultural Produce Market Committee) centers opened by the Nodal procurement agency. Farmers must be pre-registered, and their produce must meet Fair Average Quality (FAQ) standards. [cite: 149, 43, 37]",
+            "applicationProcess": "Primarily offline, involving interaction with procurement centers. Farmers typically register through state portals or local agencies. When market prices drop below MSP, procurement centers are opened at APMC yards by state and central nodal agencies. [cite: 150, 43]",
+            "requiredDocuments": "Identification proof (such as Aadhaar or PAN card), land documents (e.g., 7/12, 8-A extracts), bank account details, agricultural documents (detailing crop information), an income certificate, and photographs. [cite: 152, 43]"
+          }
+        ]
+      },
+      {
+        "cropName": "Sesamum",
+        "schemes": [
+          {
+            "schemeName": "Pradhan Mantri Annadata Aay Sanrakshan Abhiyan (PM-AASHA) - Price Support Scheme (PSS)",
+            "type": "Market Price Support",
+            "description": "Aims to ensure remunerative prices for farmers by procuring notified crops at the Minimum Support Price (MSP) when market prices fall below the MSP during peak harvesting periods. [cite: 146, 32]",
+            "applicableCropMention": "Sesamum [cite: 153, 43]",
+            "procurementLimit": "Initially set at a maximum of 25% of the state's production for a particular season. If a state achieves this quantity and requests further procurement, it can be considered up to 25% of the national production. [cite: 146, 32]",
+            "eligibilityNotes": "Farmers must sell their produce at designated APMC (Agricultural Produce Market Committee) centers opened by the Nodal procurement agency. Farmers must be pre-registered, and their produce must meet Fair Average Quality (FAQ) standards. [cite: 149, 43, 37]",
+            "applicationProcess": "Primarily offline, involving interaction with procurement centers. Farmers typically register through state portals or local agencies. When market prices drop below MSP, procurement centers are opened at APMC yards by state and central nodal agencies. [cite: 150, 43]",
+            "requiredDocuments": "Identification proof (such as Aadhaar or PAN card), land documents (e.g., 7/12, 8-A extracts), bank account details, agricultural documents (detailing crop information), an income certificate, and photographs. [cite: 152, 43]"
+          }
+        ]
+      },
+      {
+        "cropName": "Mustard",
+        "schemes": [
+          {
+            "schemeName": "Pradhan Mantri Annadata Aay Sanrakshan Abhiyan (PM-AASHA) - Price Support Scheme (PSS)",
+            "type": "Market Price Support",
+            "description": "Aims to ensure remunerative prices for farmers by procuring notified crops at the Minimum Support Price (MSP) when market prices fall below the MSP during peak harvesting periods. [cite: 146, 32]",
+            "applicableCropMention": "Mustard [cite: 153, 43]",
+            "procurementLimit": "Initially set at a maximum of 25% of the state's production for a particular season. If a state achieves this quantity and requests further procurement, it can be considered up to 25% of the national production. [cite: 146, 32]",
+            "eligibilityNotes": "Farmers must sell their produce at designated APMC (Agricultural Produce Market Committee) centers opened by the Nodal procurement agency. Farmers must be pre-registered, and their produce must meet Fair Average Quality (FAQ) standards. [cite: 149, 43, 37]",
+            "applicationProcess": "Primarily offline, involving interaction with procurement centers. Farmers typically register through state portals or local agencies. When market prices drop below MSP, procurement centers are opened at APMC yards by state and central nodal agencies. [cite: 150, 43]",
+            "requiredDocuments": "Identification proof (such as Aadhaar or PAN card), land documents (e.g., 7/12, 8-A extracts), bank account details, agricultural documents (detailing crop information), an income certificate, and photographs. [cite: 152, 43]"
+          }
+        ]
+      },
+      {
+        "cropName": "Sugarcane",
+        "schemes": [
+          {
+            "schemeName": "Pradhan Mantri Annadata Aay Sanrakshan Abhiyan (PM-AASHA) - Price Support Scheme (PSS)",
+            "type": "Market Price Support",
+            "description": "Aims to ensure remunerative prices for farmers by procuring notified crops at the Minimum Support Price (MSP) when market prices fall below the MSP during peak harvesting periods. [cite: 146, 32]",
+            "applicableCropMention": "Sugarcane [cite: 153, 43]",
+            "procurementLimit": "Initially set at a maximum of 25% of the state's production for a particular season. If a state achieves this quantity and requests further procurement, it can be considered up to 25% of the national production. [cite: 146, 32]",
+            "eligibilityNotes": "Farmers must sell their produce at designated APMC (Agricultural Produce Market Committee) centers opened by the Nodal procurement agency. Farmers must be pre-registered, and their produce must meet Fair Average Quality (FAQ) standards. [cite: 149, 43, 37]",
+            "applicationProcess": "Primarily offline, involving interaction with procurement centers. Farmers typically register through state portals or local agencies. When market prices drop below MSP, procurement centers are opened at APMC yards by state and central nodal agencies. [cite: 150, 43]",
+            "requiredDocuments": "Identification proof (such as Aadhaar or PAN card), land documents (e.g., 7/12, 8-A extracts), bank account details, agricultural documents (detailing crop information), an income certificate, and photographs. [cite: 152, 43]"
+          }
+        ]
+      },
+      {
+        "cropName": "Copra",
+        "schemes": [
+          {
+            "schemeName": "Pradhan Mantri Annadata Aay Sanrakshan Abhiyan (PM-AASHA) - Price Support Scheme (PSS)",
+            "type": "Market Price Support",
+            "description": "Aims to ensure remunerative prices for farmers by procuring notified crops at the Minimum Support Price (MSP) when market prices fall below the MSP during peak harvesting periods. [cite: 146, 32]",
+            "applicableCropMention": "Copra [cite: 146, 153, 32, 43]",
+            "procurementLimit": "Initially set at a maximum of 25% of the state's production for a particular season. If a state achieves this quantity and requests further procurement, it can be considered up to 25% of the national production. [cite: 146, 32]",
+            "eligibilityNotes": "Farmers must sell their produce at designated APMC (Agricultural Produce Market Committee) centers opened by the Nodal procurement agency. Farmers must be pre-registered, and their produce must meet Fair Average Quality (FAQ) standards. [cite: 149, 43, 37]",
+            "applicationProcess": "Primarily offline, involving interaction with procurement centers. Farmers typically register through state portals or local agencies. When market prices drop below MSP, procurement centers are opened at APMC yards by state and central nodal agencies. [cite: 150, 43]",
+            "requiredDocuments": "Identification proof (such as Aadhaar or PAN card), land documents (e.g., 7/12, 8-A extracts), bank account details, agricultural documents (detailing crop information), an income certificate, and photographs. [cite: 152, 43]"
+          }
+        ]
+      },
+      {
+        "cropName": "Oil Palm",
+        "schemes": [
+          {
+            "schemeName": "National Mission on Edible Oils – Oil Palm (NMEO-OP)",
+            "type": "Production Enhancement",
+            "description": "A strategic national objective to significantly enhance edible oilseeds production and overall oil availability within India, thereby reducing the country's substantial dependence on edible oil imports. [cite: 131, 28]",
+            "keyBenefits": [
+              "Financial assistance for area expansion and planting material. [cite: 134]",
+              "Promotion of 'inter-cropping during gestation period of 4 years' to allow farmers to generate immediate economic returns from other crops while waiting for oil palm to mature. [cite: 134, 28]"
+            ],
+            "eligibilityNotes": "Anyone is eligible to apply, and any farmer who owns land can avail the scheme's benefits. There are no area restrictions for individual farmers. The scheme prioritizes small, marginal, Scheduled Caste (SC), Scheduled Tribe (ST), and women farmers involved in oil palm cultivation. [cite: 134, 30, 28]",
+            "applicationProcess": "Primarily offline, with significant coordination at the state and district levels. Interested beneficiaries are instructed to contact their local District Agriculture Officer or Block Agriculture Officer to apply. Funds are disbursed through the Public Financial Management System (PFMS) via Direct Benefit Transfer (DBT). [cite: 136, 137, 138, 30, 28]",
+            "requiredDocuments": "ID Proof, land documents, bank details, and photographs. Specific documents may vary depending on the type of intervention and the state. [cite: 139, 30]"
+          }
+        ]
+      },
+      {
+        "cropName": "Horticultural Crops (Fruits, Vegetables, Root & Tuber Crops, Mushrooms, Spices, Flowers, Aromatic Plants, Coconut, Cashew, Cocoa, Bamboo)",
+        "schemes": [
+          {
+            "schemeName": "Mission for Integrated Development of Horticulture (MIDH)",
+            "type": "Holistic Horticulture Growth",
+            "description": "A Centrally Sponsored Scheme dedicated to fostering the holistic growth of India's horticulture sector. It covers a wide array of horticultural crops. [cite: 64, 10]",
+            "applicableCrops": "Fruits, vegetables, root and tuber crops, mushrooms, spices, flowers, aromatic plants, coconut, cashew, cocoa, and bamboo. [cite: 64, 10]",
+            "keyBenefits": [
+              "Promotes holistic growth through area-based and regionally differentiated strategies encompassing research, technology promotion, extension services, post-harvest management, processing, and marketing. [cite: 64, 10]",
+              "Encourages aggregation of farmers into Farmer Interest Groups (FIGs), Farmer Producer Organizations (FPOs), and Farmer Producer Companies (FPCs). [cite: 64, 10]",
+              "Aims to enhance horticulture production, augment farmers' income, strengthen nutritional security, improve productivity through quality germplasm, promote water use efficiency via micro-irrigation, support skill development, and create employment opportunities. [cite: 65, 66, 10]"
+            ],
+            "eligibilityNotes": "Generally requires farmers or entrepreneurs to have land ownership in the respective state. Registered lease agreement needed if no land ownership (10 years for orchards/seasonal crops, 15 years for project-based activities). Assistance available for horticultural crops aligning with GoI norms. Applicants must possess an assured source of irrigation. [cite: 67, 12]",
+            "applicationProcess": "Varies based on activity type. For non-project-based activities, online registration in Hortnet or physical applications to DHSO office. For project-based activities, applications and DPRs sent through multiple approval levels. \"FIRST COME FIRST SERVE\" policy adopted when applicants exceed targets. [cite: 69, 70, 71, 12, 10]",
+            "requiredDocuments": "Land documents, identity documents, bank details, recent passport-sized photograph, affidavit declaring no other subsidy. Project-based proposals require Detailed Project Report (DPR), water/soil analysis, bank term loan sanction, estimates, farm photographs, and annual plan for plant material production. Specific components like Protected Cultivation require training certificates and insurance. [cite: 73, 74, 12]"
+          },
+          {
+            "schemeName": "Pradhan Mantri Annadata Aay Sanrakshan Abhiyan (PM-AASHA) - Market Intervention Scheme (MIS)",
+            "type": "Market Intervention",
+            "description": "Specifically designed to provide financial support for perishable agricultural and horticultural commodities that are not covered by the Minimum Support Price (MSP). Activated when market prices fall significantly, typically by at least 10% below the rates of the previous normal season, aiming to prevent distress sales by farmers. [cite: 163, 32, 48]",
+            "applicableCropMention": "Perishable agricultural and horticultural commodities. [cite: 163, 32, 47] (Specific crops include Tomato, Onion, Potato (TOP crops) for operational cost reimbursement to CNAs). [cite: 165, 48]",
+            "procurementLimit": "Increased from 20% to 25% of the total production. [cite: 163, 48]",
+            "keyBenefits": [
+              "States have the option to directly transfer the difference between the Market Intervention Price (MIP) and the selling price to farmers' bank accounts, replacing physical procurement. [cite: 164, 48]",
+              "Central Nodal Agencies (CNAs) are reimbursed for operational costs incurred in storing and transporting critical commodities (TOP crops) between producing and consuming states. [cite: 165, 48]",
+              "Inclusion of Farmer Producer Organizations (FPOs) and Farmer Producer Companies (FPCs) in the procurement network. [cite: 165, 48]"
+            ],
+            "eligibilityNotes": "Contingent upon a request from the State/UT Government. Triggered when there is a minimum 10% reduction in the prevailing market price compared to the previous normal year. The requesting State/UT must commit to sharing the total loss incurred (50:50 Centre:State or 75:25 for North-Eastern States). [cite: 166, 47, 48]",
+            "applicationProcess": "Primarily at the State Government level. State Government submits a proposal to the Department of Agriculture & Cooperation. Procurement operations are undertaken by State-designated agencies at a fixed MIP. Stocks are purchased directly from Cooperative Societies, Farmers' organizations, or individual farmers. [cite: 167, 168, 169, 49, 47]",
+            "requiredDocuments": "Not explicitly detailed for individual farmers; state proposals require comprehensive financial and operational plans. [cite: 170]"
+          }
+        ]
+      },
+      {
+        "cropName": "Mango",
+        "schemes": [
+          {
+            "schemeName": "Bhausaheb Fundkar Phalbaag Lagvad Yojana (Maharashtra State Scheme)",
+            "type": "Perennial Fruit Crop Cultivation Promotion",
+            "description": "A 100% state-sponsored scheme in Maharashtra designed to promote the cultivation of perennial fruit crops. Financial assistance is paid in three annual installments, directly credited to the Aadhaar-linked bank account of the beneficiary. [cite: 229, 62]",
+            "applicableCropMention": "Mango [cite: 230, 62]",
+            "benefitAmounts": "Vary by fruit crop, e.g., Mango (₹67005 or ₹129306 depending on variety/density). [cite: 231, 62]",
+            "eligibilityNotes": "Beneficiary must be a permanent resident of Maharashtra State. Farmers must possess an Aadhaar Card, along with a 7/12 certificate and an 8-A certificate. Women farmers are explicitly eligible. The permissible area for benefits is a maximum of 10 hectares for the Konkan division and a maximum of 6 hectares for the rest of Maharashtra. Must maintain a minimum fruit plant survival rate of 80% for the first year and 90% for the second year. [cite: 229, 230, 62]",
+            "applicationProcess": "Online through the Aaple Sarkar DBT Portal (mahadbt.maharashtra.gov.in). Farmers navigate to the \"Farmer Scheme\" section, register, complete their profile, and apply for the desired implements. [cite: 232, 233, 59, 62]",
+            "requiredDocuments": "Aadhaar Card, 7/12 certificate, and 8-A certificate. [cite: 233, 62]"
+          }
+        ]
+      },
+      {
+        "cropName": "Cashew",
+        "schemes": [
+          {
+            "schemeName": "Bhausaheb Fundkar Phalbaag Lagvad Yojana (Maharashtra State Scheme)",
+            "type": "Perennial Fruit Crop Cultivation Promotion",
+            "description": "A 100% state-sponsored scheme in Maharashtra designed to promote the cultivation of perennial fruit crops. Financial assistance is paid in three annual installments, directly credited to the Aadhaar-linked bank account of the beneficiary. [cite: 229, 62]",
+            "applicableCropMention": "Cashew [cite: 230, 62]",
+            "benefitAmounts": "Vary by fruit crop, e.g., Cashew nuts (₹67027). [cite: 231, 62]",
+            "eligibilityNotes": "Beneficiary must be a permanent resident of Maharashtra State. Farmers must possess an Aadhaar Card, along with a 7/12 certificate and an 8-A certificate. Women farmers are explicitly eligible. The permissible area for benefits is a maximum of 10 hectares for the Konkan division and a maximum of 6 hectares for the rest of Maharashtra. Must maintain a minimum fruit plant survival rate of 80% for the first year and 90% for the second year. [cite: 229, 230, 62]",
+            "applicationProcess": "Online through the Aaple Sarkar DBT Portal (mahadbt.maharashtra.gov.in). Farmers navigate to the \"Farmer Scheme\" section, register, complete their profile, and apply for the desired implements. [cite: 232, 233, 59, 62]",
+            "requiredDocuments": "Aadhaar Card, 7/12 certificate, and 8-A certificate. [cite: 233, 62]"
+          }
+        ]
+      },
+      {
+        "cropName": "Guava",
+        "schemes": [
+          {
+            "schemeName": "Bhausaheb Fundkar Phalbaag Lagvad Yojana (Maharashtra State Scheme)",
+            "type": "Perennial Fruit Crop Cultivation Promotion",
+            "description": "A 100% state-sponsored scheme in Maharashtra designed to promote the cultivation of perennial fruit crops. Financial assistance is paid in three annual installments, directly credited to the Aadhaar-linked bank account of the beneficiary. [cite: 229, 62]",
+            "applicableCropMention": "Guava [cite: 230, 62]",
+            "benefitAmounts": "Vary by fruit crop, e.g., Guava (₹227517 or ₹74860). [cite: 231, 62]",
+            "eligibilityNotes": "Beneficiary must be a permanent resident of Maharashtra State. Farmers must possess an Aadhaar Card, along with a 7/12 certificate and an 8-A certificate. Women farmers are explicitly eligible. The permissible area for benefits is a maximum of 10 hectares for the Konkan division and a maximum of 6 hectares for the rest of Maharashtra. Must maintain a minimum fruit plant survival rate of 80% for the first year and 90% for the second year. [cite: 229, 230, 62]",
+            "applicationProcess": "Online through the Aaple Sarkar DBT Portal (mahadbt.maharashtra.gov.in). Farmers navigate to the \"Farmer Scheme\" section, register, complete their profile, and apply for the desired implements. [cite: 232, 233, 59, 62]",
+            "requiredDocuments": "Aadhaar Card, 7/12 certificate, and 8-A certificate. [cite: 233, 62]"
+          }
+        ]
+      },
+      {
+        "cropName": "Sapota",
+        "schemes": [
+          {
+            "schemeName": "Bhausaheb Fundkar Phalbaag Lagvad Yojana (Maharashtra State Scheme)",
+            "type": "Perennial Fruit Crop Cultivation Promotion",
+            "description": "A 100% state-sponsored scheme in Maharashtra designed to promote the cultivation of perennial fruit crops. Financial assistance is paid in three annual installments, directly credited to the Aadhaar-linked bank account of the beneficiary. [cite: 229, 62]",
+            "applicableCropMention": "Sapota [cite: 230, 62]",
+            "benefitAmounts": "Vary by fruit crop. [cite: 231, 62]",
+            "eligibilityNotes": "Beneficiary must be a permanent resident of Maharashtra State. Farmers must possess an Aadhaar Card, along with a 7/12 certificate and an 8-A certificate. Women farmers are explicitly eligible. The permissible area for benefits is a maximum of 10 hectares for the Konkan division and a maximum of 6 hectares for the rest of Maharashtra. Must maintain a minimum fruit plant survival rate of 80% for the first year and 90% for the second year. [cite: 229, 230, 62]",
+            "applicationProcess": "Online through the Aaple Sarkar DBT Portal (mahadbt.maharashtra.gov.in). Farmers navigate to the \"Farmer Scheme\" section, register, complete their profile, and apply for the desired implements. [cite: 232, 233, 59, 62]",
+            "requiredDocuments": "Aadhaar Card, 7/12 certificate, and 8-A certificate. [cite: 233, 62]"
+          }
+        ]
+      },
+      {
+        "cropName": "Custard Apple",
+        "schemes": [
+          {
+            "schemeName": "Bhausaheb Fundkar Phalbaag Lagvad Yojana (Maharashtra State Scheme)",
+            "type": "Perennial Fruit Crop Cultivation Promotion",
+            "description": "A 100% state-sponsored scheme in Maharashtra designed to promote the cultivation of perennial fruit crops. Financial assistance is paid in three annual installments, directly credited to the Aadhaar-linked bank account of the beneficiary. [cite: 229, 62]",
+            "applicableCropMention": "Custard Apple [cite: 230, 62]",
+            "benefitAmounts": "Vary by fruit crop. [cite: 231, 62]",
+            "eligibilityNotes": "Beneficiary must be a permanent resident of Maharashtra State. Farmers must possess an Aadhaar Card, along with a 7/12 certificate and an 8-A certificate. Women farmers are explicitly eligible. The permissible area for benefits is a maximum of 10 hectares for the Konkan division and a maximum of 6 hectares for the rest of Maharashtra. Must maintain a minimum fruit plant survival rate of 80% for the first year and 90% for the second year. [cite: 229, 230, 62]",
+            "applicationProcess": "Online through the Aaple Sarkar DBT Portal (mahadbt.maharashtra.gov.in). Farmers navigate to the \"Farmer Scheme\" section, register, complete their profile, and apply for the desired implements. [cite: 232, 233, 59, 62]",
+            "requiredDocuments": "Aadhaar Card, 7/12 certificate, and 8-A certificate. [cite: 233, 62]"
+          }
+        ]
+      },
+      {
+        "cropName": "Pomegranate",
+        "schemes": [
+          {
+            "schemeName": "Bhausaheb Fundkar Phalbaag Lagvad Yojana (Maharashtra State Scheme)",
+            "type": "Perennial Fruit Crop Cultivation Promotion",
+            "description": "A 100% state-sponsored scheme in Maharashtra designed to promote the cultivation of perennial fruit crops. Financial assistance is paid in three annual installments, directly credited to the Aadhaar-linked bank account of the beneficiary. [cite: 229, 62]",
+            "applicableCropMention": "Pomegranate [cite: 230, 62]",
+            "benefitAmounts": "Vary by fruit crop, e.g., Pomegranate (₹120777). [cite: 231, 62]",
+            "eligibilityNotes": "Beneficiary must be a permanent resident of Maharashtra State. Farmers must possess an Aadhaar Card, along with a 7/12 certificate and an 8-A certificate. Women farmers are explicitly eligible. The permissible area for benefits is a maximum of 10 hectares for the Konkan division and a maximum of 6 hectares for the rest of Maharashtra. Must maintain a minimum fruit plant survival rate of 80% for the first year and 90% for the second year. [cite: 229, 230, 62]",
+            "applicationProcess": "Online through the Aaple Sarkar DBT Portal (mahadbt.maharashtra.gov.in). Farmers navigate to the \"Farmer Scheme\" section, register, complete their profile, and apply for the desired implements. [cite: 232, 233, 59, 62]",
+            "requiredDocuments": "Aadhaar Card, 7/12 certificate, and 8-A certificate. [cite: 233, 62]"
+          }
+        ]
+      },
+      {
+        "cropName": "Paper Lemon",
+        "schemes": [
+          {
+            "schemeName": "Bhausaheb Fundkar Phalbaag Lagvad Yojana (Maharashtra State Scheme)",
+            "type": "Perennial Fruit Crop Cultivation Promotion",
+            "description": "A 100% state-sponsored scheme in Maharashtra designed to promote the cultivation of perennial fruit crops. Financial assistance is paid in three annual installments, directly credited to the Aadhaar-linked bank account of the beneficiary. [cite: 229, 62]",
+            "applicableCropMention": "Paper Lemon [cite: 230, 62]",
+            "benefitAmounts": "Vary by fruit crop. [cite: 231, 62]",
+            "eligibilityNotes": "Beneficiary must be a permanent resident of Maharashtra State. Farmers must possess an Aadhaar Card, along with a 7/12 certificate and an 8-A certificate. Women farmers are explicitly eligible. The permissible area for benefits is a maximum of 10 hectares for the Konkan division and a maximum of 6 hectares for the rest of Maharashtra. Must maintain a minimum fruit plant survival rate of 80% for the first year and 90% for the second year. [cite: 229, 230, 62]",
+            "applicationProcess": "Online through the Aaple Sarkar DBT Portal (mahadbt.maharashtra.gov.in). Farmers navigate to the \"Farmer Scheme\" section, register, complete their profile, and apply for the desired implements. [cite: 232, 233, 59, 62]",
+            "requiredDocuments": "Aadhaar Card, 7/12 certificate, and 8-A certificate. [cite: 233, 62]"
+          }
+        ]
+      },
+      {
+        "cropName": "Coconut",
+        "schemes": [
+          {
+            "schemeName": "Bhausaheb Fundkar Phalbaag Lagvad Yojana (Maharashtra State Scheme)",
+            "type": "Perennial Fruit Crop Cultivation Promotion",
+            "description": "A 100% state-sponsored scheme in Maharashtra designed to promote the cultivation of perennial fruit crops. Financial assistance is paid in three annual installments, directly credited to the Aadhaar-linked bank account of the beneficiary. [cite: 229, 62]",
+            "applicableCropMention": "Coconut [cite: 230, 62]",
+            "benefitAmounts": "Vary by fruit crop. [cite: 231, 62]",
+            "eligibilityNotes": "Beneficiary must be a permanent resident of Maharashtra State. Farmers must possess an Aadhaar Card, along with a 7/12 certificate and an 8-A certificate. Women farmers are explicitly eligible. The permissible area for benefits is a maximum of 10 hectares for the Konkan division and a maximum of 6 hectares for the rest of Maharashtra. Must maintain a minimum fruit plant survival rate of 80% for the first year and 90% for the second year. [cite: 229, 230, 62]",
+            "applicationProcess": "Online through the Aaple Sarkar DBT Portal (mahadbt.maharashtra.gov.in). Farmers navigate to the \"Farmer Scheme\" section, register, complete their profile, and apply for the desired implements. [cite: 232, 233, 59, 62]",
+            "requiredDocuments": "Aadhaar Card, 7/12 certificate, and 8-A certificate. [cite: 233, 62]"
+          }
+        ]
+      },
+      {
+        "cropName": "Tamarind",
+        "schemes": [
+          {
+            "schemeName": "Bhausaheb Fundkar Phalbaag Lagvad Yojana (Maharashtra State Scheme)",
+            "type": "Perennial Fruit Crop Cultivation Promotion",
+            "description": "A 100% state-sponsored scheme in Maharashtra designed to promote the cultivation of perennial fruit crops. Financial assistance is paid in three annual installments, directly credited to the Aadhaar-linked bank account of the beneficiary. [cite: 229, 62]",
+            "applicableCropMention": "Tamarind [cite: 230, 62]",
+            "benefitAmounts": "Vary by fruit crop. [cite: 231, 62]",
+            "eligibilityNotes": "Beneficiary must be a permanent resident of Maharashtra State. Farmers must possess an Aadhaar Card, along with a 7/12 certificate and an 8-A certificate. Women farmers are explicitly eligible. The permissible area for benefits is a maximum of 10 hectares for the Konkan division and a maximum of 6 hectares for the rest of Maharashtra. Must maintain a minimum fruit plant survival rate of 80% for the first year and 90% for the second year. [cite: 229, 230, 62]",
+            "applicationProcess": "Online through the Aaple Sarkar DBT Portal (mahadbt.maharashtra.gov.in). Farmers navigate to the \"Farmer Scheme\" section, register, complete their profile, and apply for the desired implements. [cite: 232, 233, 59, 62]",
+            "requiredDocuments": "Aadhaar Card, 7/12 certificate, and 8-A certificate. [cite: 233, 62]"
+          }
+        ]
+      },
+      {
+        "cropName": "Fig",
+        "schemes": [
+          {
+            "schemeName": "Bhausaheb Fundkar Phalbaag Lagvad Yojana (Maharashtra State Scheme)",
+            "type": "Perennial Fruit Crop Cultivation Promotion",
+            "description": "A 100% state-sponsored scheme in Maharashtra designed to promote the cultivation of perennial fruit crops. Financial assistance is paid in three annual installments, directly credited to the Aadhaar-linked bank account of the beneficiary. [cite: 229, 62]",
+            "applicableCropMention": "Fig [cite: 230, 62]",
+            "benefitAmounts": "Vary by fruit crop. [cite: 231, 62]",
+            "eligibilityNotes": "Beneficiary must be a permanent resident of Maharashtra State. Farmers must possess an Aadhaar Card, along with a 7/12 certificate and an 8-A certificate. Women farmers are explicitly eligible. The permissible area for benefits is a maximum of 10 hectares for the Konkan division and a maximum of 6 hectares for the rest of Maharashtra. Must maintain a minimum fruit plant survival rate of 80% for the first year and 90% for the second year. [cite: 229, 230, 62]",
+            "applicationProcess": "Online through the Aaple Sarkar DBT Portal (mahadbt.maharashtra.gov.in). Farmers navigate to the \"Farmer Scheme\" section, register, complete their profile, and apply for the desired implements. [cite: 232, 233, 59, 62]",
+            "requiredDocuments": "Aadhaar Card, 7/12 certificate, and 8-A certificate. [cite: 233, 62]"
+          }
+        ]
+      },
+      {
+        "cropName": "Amla",
+        "schemes": [
+          {
+            "schemeName": "Bhausaheb Fundkar Phalbaag Lagvad Yojana (Maharashtra State Scheme)",
+            "type": "Perennial Fruit Crop Cultivation Promotion",
+            "description": "A 100% state-sponsored scheme in Maharashtra designed to promote the cultivation of perennial fruit crops. Financial assistance is paid in three annual installments, directly credited to the Aadhaar-linked bank account of the beneficiary. [cite: 229, 62]",
+            "applicableCropMention": "Amla [cite: 230, 62]",
+            "benefitAmounts": "Vary by fruit crop. [cite: 231, 62]",
+            "eligibilityNotes": "Beneficiary must be a permanent resident of Maharashtra State. Farmers must possess an Aadhaar Card, along with a 7/12 certificate and an 8-A certificate. Women farmers are explicitly eligible. The permissible area for benefits is a maximum of 10 hectares for the Konkan division and a maximum of 6 hectares for the rest of Maharashtra. Must maintain a minimum fruit plant survival rate of 80% for the first year and 90% for the second year. [cite: 229, 230, 62]",
+            "applicationProcess": "Online through the Aaple Sarkar DBT Portal (mahadbt.maharashtra.gov.in). Farmers navigate to the \"Farmer Scheme\" section, register, complete their profile, and apply for the desired implements. [cite: 232, 233, 59, 62]",
+            "requiredDocuments": "Aadhaar Card, 7/12 certificate, and 8-A certificate. [cite: 233, 62]"
+          }
+        ]
+      },
+      {
+        "cropName": "Kokum",
+        "schemes": [
+          {
+            "schemeName": "Bhausaheb Fundkar Phalbaag Lagvad Yojana (Maharashtra State Scheme)",
+            "type": "Perennial Fruit Crop Cultivation Promotion",
+            "description": "A 100% state-sponsored scheme in Maharashtra designed to promote the cultivation of perennial fruit crops. Financial assistance is paid in three annual installments, directly credited to the Aadhaar-linked bank account of the beneficiary. [cite: 229, 62]",
+            "applicableCropMention": "Kokum [cite: 230, 62]",
+            "benefitAmounts": "Vary by fruit crop. [cite: 231, 62]",
+            "eligibilityNotes": "Beneficiary must be a permanent resident of Maharashtra State. Farmers must possess an Aadhaar Card, along with a 7/12 certificate and an 8-A certificate. Women farmers are explicitly eligible. The permissible area for benefits is a maximum of 10 hectares for the Konkan division and a maximum of 6 hectares for the rest of Maharashtra. Must maintain a minimum fruit plant survival rate of 80% for the first year and 90% for the second year. [cite: 229, 230, 62]",
+            "applicationProcess": "Online through the Aaple Sarkar DBT Portal (mahadbt.maharashtra.gov.in). Farmers navigate to the \"Farmer Scheme\" section, register, complete their profile, and apply for the desired implements. [cite: 232, 233, 59, 62]",
+            "requiredDocuments": "Aadhaar Card, 7/12 certificate, and 8-A certificate. [cite: 233, 62]"
+          }
+        ]
+      },
+      {
+        "cropName": "Jackfruit",
+        "schemes": [
+          {
+            "schemeName": "Bhausaheb Fundkar Phalbaag Lagvad Yojana (Maharashtra State Scheme)",
+            "type": "Perennial Fruit Crop Cultivation Promotion",
+            "description": "A 100% state-sponsored scheme in Maharashtra designed to promote the cultivation of perennial fruit crops. Financial assistance is paid in three annual installments, directly credited to the Aadhaar-linked bank account of the beneficiary. [cite: 229, 62]",
+            "applicableCropMention": "Jackfruit [cite: 230, 62]",
+            "benefitAmounts": "Vary by fruit crop. [cite: 231, 62]",
+            "eligibilityNotes": "Beneficiary must be a permanent resident of Maharashtra State. Farmers must possess an Aadhaar Card, along with a 7/12 certificate and an 8-A certificate. Women farmers are explicitly eligible. The permissible area for benefits is a maximum of 10 hectares for the Konkan division and a maximum of 6 hectares for the rest of Maharashtra. Must maintain a minimum fruit plant survival rate of 80% for the first year and 90% for the second year. [cite: 229, 230, 62]",
+            "applicationProcess": "Online through the Aaple Sarkar DBT Portal (mahadbt.maharashtra.gov.in). Farmers navigate to the \"Farmer Scheme\" section, register, complete their profile, and apply for the desired implements. [cite: 232, 233, 59, 62]",
+            "requiredDocuments": "Aadhaar Card, 7/12 certificate, and 8-A certificate. [cite: 233, 62]"
+          }
+        ]
+      },
+      {
+        "cropName": "Jamun",
+        "schemes": [
+          {
+            "schemeName": "Bhausaheb Fundkar Phalbaag Lagvad Yojana (Maharashtra State Scheme)",
+            "type": "Perennial Fruit Crop Cultivation Promotion",
+            "description": "A 100% state-sponsored scheme in Maharashtra designed to promote the cultivation of perennial fruit crops. Financial assistance is paid in three annual installments, directly credited to the Aadhaar-linked bank account of the beneficiary. [cite: 229, 62]",
+            "applicableCropMention": "Jamun [cite: 230, 62]",
+            "benefitAmounts": "Vary by fruit crop. [cite: 231, 62]",
+            "eligibilityNotes": "Beneficiary must be a permanent resident of Maharashtra State. Farmers must possess an Aadhaar Card, along with a 7/12 certificate and an 8-A certificate. Women farmers are explicitly eligible. The permissible area for benefits is a maximum of 10 hectares for the Konkan division and a maximum of 6 hectares for the rest of Maharashtra. Must maintain a minimum fruit plant survival rate of 80% for the first year and 90% for the second year. [cite: 229, 230, 62]",
+            "applicationProcess": "Online through the Aaple Sarkar DBT Portal (mahadbt.maharashtra.gov.in). Farmers navigate to the \"Farmer Scheme\" section, register, complete their profile, and apply for the desired implements. [cite: 232, 233, 59, 62]",
+            "requiredDocuments": "Aadhaar Card, 7/12 certificate, and 8-A certificate. [cite: 233, 62]"
+          }
+        ]
+      },
+      {
+        "cropName": "Orange",
+        "schemes": [
+          {
+            "schemeName": "Bhausaheb Fundkar Phalbaag Lagvad Yojana (Maharashtra State Scheme)",
+            "type": "Perennial Fruit Crop Cultivation Promotion",
+            "description": "A 100% state-sponsored scheme in Maharashtra designed to promote the cultivation of perennial fruit crops. Financial assistance is paid in three annual installments, directly credited to the Aadhaar-linked bank account of the beneficiary. [cite: 229, 62]",
+            "applicableCropMention": "Orange [cite: 230, 62]",
+            "benefitAmounts": "Vary by fruit crop. [cite: 231, 62]",
+            "eligibilityNotes": "Beneficiary must be a permanent resident of Maharashtra State. Farmers must possess an Aadhaar Card, along with a 7/12 certificate and an 8-A certificate. Women farmers are explicitly eligible. The permissible area for benefits is a maximum of 10 hectares for the Konkan division and a maximum of 6 hectares for the rest of Maharashtra. Must maintain a minimum fruit plant survival rate of 80% for the first year and 90% for the second year. [cite: 229, 230, 62]",
+            "applicationProcess": "Online through the Aaple Sarkar DBT Portal (mahadbt.maharashtra.gov.in). Farmers navigate to the \"Farmer Scheme\" section, register, complete their profile, and apply for the desired implements. [cite: 232, 233, 59, 62]",
+            "requiredDocuments": "Aadhaar Card, 7/12 certificate, and 8-A certificate. [cite: 233, 62]"
+          }
+        ]
+      },
+      {
+        "cropName": "Mosambi",
+        "schemes": [
+          {
+            "schemeName": "Bhausaheb Fundkar Phalbaag Lagvad Yojana (Maharashtra State Scheme)",
+            "type": "Perennial Fruit Crop Cultivation Promotion",
+            "description": "A 100% state-sponsored scheme in Maharashtra designed to promote the cultivation of perennial fruit crops. Financial assistance is paid in three annual installments, directly credited to the Aadhaar-linked bank account of the beneficiary. [cite: 229, 62]",
+            "applicableCropMention": "Mosambi [cite: 230, 62]",
+            "benefitAmounts": "Vary by fruit crop. [cite: 231, 62]",
+            "eligibilityNotes": "Beneficiary must be a permanent resident of Maharashtra State. Farmers must possess an Aadhaar Card, along with a 7/12 certificate and an 8-A certificate. Women farmers are explicitly eligible. The permissible area for benefits is a maximum of 10 hectares for the Konkan division and a maximum of 6 hectares for the rest of Maharashtra. Must maintain a minimum fruit plant survival rate of 80% for the first year and 90% for the second year. [cite: 229, 230, 62]",
+            "applicationProcess": "Online through the Aaple Sarkar DBT Portal (mahadbt.maharashtra.gov.in). Farmers navigate to the \"Farmer Scheme\" section, register, complete their profile, and apply for the desired implements. [cite: 232, 233, 59, 62]",
+            "requiredDocuments": "Aadhaar Card, 7/12 certificate, and 8-A certificate. [cite: 233, 62]"
+          }
+        ]
+      },
+      {
+        "cropName": "Tomato",
+        "schemes": [
+          {
+            "schemeName": "Pradhan Mantri Annadata Aay Sanrakshan Abhiyan (PM-AASHA) - Market Intervention Scheme (MIS)",
+            "type": "Market Intervention (for Perishables)",
+            "description": "Specifically designed to provide financial support for perishable agricultural and horticultural commodities that are not covered by the Minimum Support Price (MSP). Activated when market prices fall significantly, aiming to prevent distress sales by farmers. [cite: 163, 32, 48]",
+            "applicableCropMention": "Tomato (as one of the TOP crops where Central Nodal Agencies are reimbursed for operational costs). [cite: 165, 48]",
+            "keyBenefits": [
+              "States have the option to directly transfer the difference between the Market Intervention Price (MIP) and the selling price to farmers' bank accounts, replacing physical procurement. [cite: 164, 48]",
+              "Central Nodal Agencies (CNAs) like NAFED and NCCF are reimbursed for operational costs incurred in storing and transporting critical commodities (like Tomato) between producing and consuming states. [cite: 165, 48]",
+              "Inclusion of Farmer Producer Organizations (FPOs) and Farmer Producer Companies (FPCs) in the procurement network. [cite: 165, 48]"
+            ],
+            "eligibilityNotes": "Contingent upon a request from the State/UT Government. Triggered when there is a minimum 10% reduction in the prevailing market price compared to the previous normal year. The requesting State/UT must commit to sharing the total loss incurred. [cite: 166, 47, 48]",
+            "applicationProcess": "Primarily at the State Government level. State Government submits a proposal to the Department of Agriculture & Cooperation. Procurement operations are undertaken by State-designated agencies at a fixed MIP. Stocks are purchased directly from Cooperative Societies, Farmers' organizations, or individual farmers. [cite: 167, 168, 169, 49, 47]",
+            "requiredDocuments": "Not explicitly detailed for individual farmers; state proposals require comprehensive financial and operational plans. [cite: 170]"
+          }
+        ]
+      },
+      {
+        "cropName": "Onion",
+        "schemes": [
+          {
+            "schemeName": "Pradhan Mantri Annadata Aay Sanrakshan Abhiyan (PM-AASHA) - Market Intervention Scheme (MIS)",
+            "type": "Market Intervention (for Perishables)",
+            "description": "Specifically designed to provide financial support for perishable agricultural and horticultural commodities that are not covered by the Minimum Support Price (MSP). Activated when market prices fall significantly, aiming to prevent distress sales by farmers. [cite: 163, 32, 48]",
+            "applicableCropMention": "Onion (as one of the TOP crops where Central Nodal Agencies are reimbursed for operational costs). [cite: 165, 48]",
+            "keyBenefits": [
+              "States have the option to directly transfer the difference between the Market Intervention Price (MIP) and the selling price to farmers' bank accounts, replacing physical procurement. [cite: 164, 48]",
+              "Central Nodal Agencies (CNAs) like NAFED and NCCF are reimbursed for operational costs incurred in storing and transporting critical commodities (like Onion) between producing and consuming states. [cite: 165, 48]",
+              "Inclusion of Farmer Producer Organizations (FPOs) and Farmer Producer Companies (FPCs) in the procurement network. [cite: 165, 48]"
+            ],
+            "eligibilityNotes": "Contingent upon a request from the State/UT Government. Triggered when there is a minimum 10% reduction in the prevailing market price compared to the previous normal year. The requesting State/UT must commit to sharing the total loss incurred. [cite: 166, 47, 48]",
+            "applicationProcess": "Primarily at the State Government level. State Government submits a proposal to the Department of Agriculture & Cooperation. Procurement operations are undertaken by State-designated agencies at a fixed MIP. Stocks are purchased directly from Cooperative Societies, Farmers' organizations, or individual farmers. [cite: 167, 168, 169, 49, 47]",
+            "requiredDocuments": "Not explicitly detailed for individual farmers; state proposals require comprehensive financial and operational plans. [cite: 170]"
+          }
+        ]
+      },
+      {
+        "cropName": "Potato",
+        "schemes": [
+          {
+            "schemeName": "Pradhan Mantri Annadata Aay Sanrakshan Abhiyan (PM-AASHA) - Market Intervention Scheme (MIS)",
+            "type": "Market Intervention (for Perishables)",
+            "description": "Specifically designed to provide financial support for perishable agricultural and horticultural commodities that are not covered by the Minimum Support Price (MSP). Activated when market prices fall significantly, aiming to prevent distress sales by farmers. [cite: 163, 32, 48]",
+            "applicableCropMention": "Potato (as one of the TOP crops where Central Nodal Agencies are reimbursed for operational costs). [cite: 165, 48]",
+            "keyBenefits": [
+              "States have the option to directly transfer the difference between the Market Intervention Price (MIP) and the selling price to farmers' bank accounts, replacing physical procurement. [cite: 164, 48]",
+              "Central Nodal Agencies (CNAs) like NAFED and NCCF are reimbursed for operational costs incurred in storing and transporting critical commodities (like Potato) between producing and consuming states. [cite: 165, 48]",
+              "Inclusion of Farmer Producer Organizations (FPOs) and Farmer Producer Companies (FPCs) in the procurement network. [cite: 165, 48]"
+            ],
+            "eligibilityNotes": "Contingent upon a request from the State/UT Government. Triggered when there is a minimum 10% reduction in the prevailing market price compared to the previous normal year. The requesting State/UT must commit to sharing the total loss incurred. [cite: 166, 47, 48]",
+            "applicationProcess": "Primarily at the State Government level. State Government submits a proposal to the Department of Agriculture & Cooperation. Procurement operations are undertaken by State-designated agencies at a fixed MIP. Stocks are purchased directly from Cooperative Societies, Farmers' organizations, or individual farmers. [cite: 167, 168, 169, 49, 47]",
+            "requiredDocuments": "Not explicitly detailed for individual farmers; state proposals require comprehensive financial and operational plans. [cite: 170]"
+          }
+        ]
+      }
+    ]
+  }

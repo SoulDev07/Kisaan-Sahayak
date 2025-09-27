@@ -1,0 +1,17 @@
+fastapi
+pydantic
+uvicorn
+google-adk
+python-multipart
+google-generativeai
+pandas
+beautifulsoup4
+langchain
+langchain-community
+langchain-core
+google-generativeai
+langchain-google-genai
+langdetect
+firebase_admin
+psycopg2-binary
+google-cloud-texttospeech

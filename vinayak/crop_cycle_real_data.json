@@ -1,0 +1,337 @@
+{
+  "corporate_buyers": {
+    "Rice": [
+      {
+        "id": 1,
+        "name": "ITC e-Choupal",
+        "logo": "🏢",
+        "contractPrice": 2200,
+        "marketPrice": 1850,
+        "premium": 19,
+        "requirements": "Organic certification, 5-ton minimum, moisture content <14%",
+        "payment": "Within 7 days of delivery",
+        "contract": "1 year renewable",
+        "contact": "+91-1800-425-1234",
+        "email": "procurement@itc.in",
+        "rating": 4.8,
+        "farmers": 15000,
+        "location": "Multiple procurement centers across India",
+        "certifications_required": ["Organic", "FSSAI"],
+        "quality_parameters": {
+          "moisture": "<14%",
+          "broken_grains": "<5%",
+          "foreign_matter": "<1%"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Reliance Fresh",
+        "logo": "🛒",
+        "contractPrice": 2100,
+        "marketPrice": 1850,
+        "premium": 14,
+        "requirements": "FSSAI certified, 3-ton minimum, Grade A quality",
+        "payment": "Within 15 days of delivery",
+        "contract": "6 months renewable",
+        "contact": "+91-1800-111-1111",
+        "email": "agri.sourcing@reliancefresh.com",
+        "rating": 4.5,
+        "farmers": 8000,
+        "location": "Procurement hubs in major producing states",
+        "certifications_required": ["FSSAI"],
+        "quality_parameters": {
+          "grade": "A",
+          "moisture": "<14%",
+          "uniformity": "High"
+        }
+      }
+    ],
+    "Wheat": [
+      {
+        "id": 1,
+        "name": "Britannia Industries",
+        "logo": "🍞",
+        "contractPrice": 2500,
+        "marketPrice": 2100,
+        "premium": 19,
+        "requirements": "High protein content (>12%), 10-ton minimum",
+        "payment": "Within 10 days of quality approval",
+        "contract": "1 year with price revision clause",
+        "contact": "+91-1800-425-5678",
+        "email": "wheat.procurement@britindia.com",
+        "rating": 4.7,
+        "farmers": 12000,
+        "location": "Punjab, Haryana, UP procurement centers",
+        "certifications_required": ["ISO 22000", "FSSAI"],
+        "quality_parameters": {
+          "protein_content": ">12%",
+          "gluten_content": ">28%",
+          "moisture": "<12%",
+          "foreign_matter": "<2%"
+        }
+      }
+    ],
+    "Cotton": [
+      {
+        "id": 1,
+        "name": "Arvind Mills",
+        "logo": "🧵",
+        "contractPrice": 7500,
+        "marketPrice": 6500,
+        "premium": 15,
+        "requirements": "Long staple cotton, 2-ton minimum, micronaire 3.5-4.9",
+        "payment": "Within 15 days of ginning",
+        "contract": "1 year with seasonal adjustments",
+        "contact": "+91-1800-425-7777",
+        "email": "cotton.sourcing@arvind.com",
+        "rating": 4.6,
+        "farmers": 8000,
+        "location": "Gujarat, Maharashtra, Karnataka",
+        "certifications_required": ["BCI", "Organic (preferred)"],
+        "quality_parameters": {
+          "staple_length": "28-32mm",
+          "micronaire": "3.5-4.9",
+          "strength": ">28 g/tex",
+          "trash_content": "<4%"
+        }
+      }
+    ]
+  },
+  "loan_schemes": {
+    "Kisan Credit Card": {
+      "name": "Kisan Credit Card (KCC)",
+      "logo": "🏦",
+      "maxAmount": "₹3,00,000",
+      "interestRate": "7% (with 3% interest subvention)",
+      "processingTime": "7-14 days",
+      "eligibility": "All farmers with land ownership/tenancy rights",
+      "documents": ["Aadhaar Card", "Land records", "Passport size photo", "Bank account details"],
+      "contact": "+91-1800-180-1551",
+      "website": "https://pmkisan.gov.in/",
+      "rating": 4.8,
+      "farmers": 8000000,
+      "subsidy": "Interest subvention up to 3% for timely repayment",
+      "application_process": [
+        "Visit nearest bank branch",
+        "Fill KCC application form",
+        "Submit required documents",
+        "Bank verification process",
+        "Card issuance within 14 days"
+      ],
+      "benefits": [
+        "Revolving credit facility",
+        "No collateral for amounts up to ₹1.6 lakh",
+        "Flexible repayment",
+        "Crop insurance linkage"
+      ]
+    },
+    "PM-KISAN Mudra Loan": {
+      "name": "Mudra Agricultural Loan",
+      "logo": "💰",
+      "maxAmount": "₹10,00,000",
+      "interestRate": "8.5-12% (varies by bank)",
+      "processingTime": "10-20 days",
+      "eligibility": "Small & marginal farmers, agri-allied activities",
+      "documents": ["Business plan", "Income certificate", "Bank statements", "Land documents"],
+      "contact": "+91-1800-180-1111",
+      "website": "https://mudra.org.in/",
+      "rating": 4.5,
+      "farmers": 3000000,
+      "subsidy": "No direct subsidy, but lower interest rates for priority sectors",
+      "categories": {
+        "Shishu": "Up to ₹50,000",
+        "Kishor": "₹50,001 to ₹5,00,000",
+        "Tarun": "₹5,00,001 to ₹10,00,000"
+      }
+    }
+  },
+  "insurance_plans": {
+    "PMFBY": {
+      "name": "Pradhan Mantri Fasal Bima Yojana",
+      "logo": "🏛️",
+      "premium": "2% for Kharif, 1.5% for Rabi, 5% for Commercial/Horticultural crops",
+      "coverage": "Full sum insured against natural calamities",
+      "governmentShare": "Balance premium after farmer's share",
+      "farmerShare": "2% Kharif, 1.5% Rabi, 5% Commercial crops",
+      "claimTime": "45 days from harvest",
+      "contact": "+91-1800-180-1551",
+      "website": "https://pmfby.gov.in/",
+      "rating": 4.8,
+      "farmers": 50000000,
+      "covered_risks": [
+        "Drought",
+        "Flood",
+        "Hailstorm",
+        "Cyclone",
+        "Fire",
+        "Lightning",
+        "Landslide",
+        "Inundation"
+      ],
+      "claim_settlement": "Technology-enabled quick settlement using satellite data"
+    }
+  },
+  "certification_providers": {
+    "Organic": {
+      "name": "India Organic Certification Agency (INDOCERT)",
+      "cost": "₹15,000-25,000 (varies by farm size)",
+      "duration": "3-6 months for initial certification",
+      "validity": "3 years with annual surveillance",
+      "benefits": "20-30% price premium, export opportunities",
+      "contact": "+91-484-2700337",
+      "email": "info@indocert.org",
+      "website": "https://indocert.org/",
+      "requirements": [
+        "3-year conversion period",
+        "Organic system plan",
+        "Record keeping",
+        "No synthetic chemicals"
+      ]
+    },
+    "FSSAI": {
+      "name": "Food Safety and Standards Authority of India",
+      "cost": "₹2,000-10,000 (based on turnover)",
+      "duration": "30-45 days",
+      "validity": "1-5 years based on license type",
+      "benefits": "Market access, consumer trust, legal compliance",
+      "contact": "+91-1800-112-100",
+      "email": "info@fssai.gov.in",
+      "website": "https://fssai.gov.in/",
+      "types": [
+        "Basic Registration: <₹12 lakh turnover",
+        "State License: ₹12 lakh - ₹20 crore",
+        "Central License: >₹20 crore"
+      ]
+    }
+  },
+  "mandi_information": {
+    "Azadpur Mandi, Delhi": {
+      "name": "Azadpur Agricultural Produce Market Committee",
+      "distance_from_major_cities": {
+        "Delhi": "15 km",
+        "Gurgaon": "45 km",
+        "Faridabad": "50 km"
+      },
+      "commission": "2.5-4% (varies by commodity)",
+      "facilities": ["Cold Storage", "Grading", "Packaging", "Loading/Unloading"],
+      "contact": "+91-11-27676001",
+      "email": "apmcazadpur@gmail.com",
+      "bestDays": ["Monday", "Wednesday", "Friday"],
+      "operatingHours": "4:00 AM - 10:00 PM",
+      "major_commodities": ["Rice", "Wheat", "Vegetables", "Fruits"],
+      "storage_capacity": "50,000 tonnes",
+      "annual_turnover": "₹15,000 crores"
+    }
+  },
+  "solar_providers": {
+    "PM-KUSUM": {
+      "scheme_name": "PM-KUSUM (Pradhan Mantri Kisan Urja Suraksha evam Utthaan Mahabhiyan)",
+      "subsidy": "60% Central + State Government",
+      "loan": "30% bank loan at 7% interest",
+      "farmer_contribution": "10%",
+      "contact": "+91-1800-180-1551",
+      "website": "https://mnre.gov.in/solar/schemes/",
+      "components": {
+        "Component A": "Solar pumps for irrigation",
+        "Component B": "Grid-connected solar power plants on farmland",
+        "Component C": "Solarization of existing grid-connected pumps"
+      },
+      "implementation_agencies": [
+        "MNRE (Ministry of New and Renewable Energy)",
+        "State Nodal Agencies",
+        "Empaneled vendors"
+      ]
+    }
+  },
+  "soil_testing_labs": {
+    "Government Labs": [
+      {
+        "name": "Regional Soil Testing Laboratory",
+        "location": "District Agriculture Office",
+        "cost": "₹50-100 per sample",
+        "turnaround_time": "7-15 days",
+        "contact": "+91-1800-180-1551",
+        "parameters_tested": [
+          "pH",
+          "Electrical Conductivity",
+          "Organic Carbon",
+          "Available NPK",
+          "Micronutrients (Zn, Fe, Mn, Cu, B)"
+        ]
+      }
+    ],
+    "Private Labs": [
+      {
+        "name": "CropIn Technology Solutions",
+        "cost": "₹500-1500 per sample",
+        "turnaround_time": "3-5 days",
+        "contact": "+91-80-4719-4444",
+        "website": "https://cropin.com/",
+        "services": [
+          "Soil testing",
+          "Digital soil health cards",
+          "Nutrient recommendations",
+          "Precision agriculture solutions"
+        ]
+      }
+    ]
+  },
+  "fpo_information": {
+    "formation_support": {
+      "organization": "NABARD (National Bank for Agriculture and Rural Development)",
+      "grant": "₹18 lakh per FPO over 3 years",
+      "contact": "+91-22-2653-4000",
+      "website": "https://nabard.org/",
+      "eligibility": "Minimum 300 farmers for plain areas, 100 for hilly areas",
+      "benefits": [
+        "Collective bargaining power",
+        "Better input prices",
+        "Market linkages",
+        "Technical support",
+        "Financial inclusion"
+      ]
+    }
+  },
+  "government_schemes": {
+    "pradhan_mantri_krishi_sinchai_yojana": {
+      "name": "Pradhan Mantri Krishi Sinchai Yojana (PMKSY)",
+      "objective": "Expand cultivated area under assured irrigation",
+      "subsidy": "55% for general farmers, 75% for SC/ST farmers",
+      "contact": "+91-1800-180-1551",
+      "components": [
+        "Accelerated Irrigation Benefit Programme (AIBP)",
+        "Har Khet Ko Pani",
+        "Per Drop More Crop"
+      ]
+    },
+    "paramparagat_krishi_vikas_yojana": {
+      "name": "Paramparagat Krishi Vikas Yojana (PKVY)",
+      "objective": "Promote organic farming",
+      "financial_assistance": "₹50,000 per hectare over 3 years",
+      "contact": "+91-1800-180-1551",
+      "cluster_size": "50 hectares minimum",
+      "farmer_group_size": "Minimum 20 farmers"
+    }
+  },
+  "weather_advisory_services": {
+    "IMD": {
+      "name": "India Meteorological Department",
+      "service": "District-wise weather forecast and agro-advisories",
+      "contact": "+91-11-2446-2476",
+      "website": "https://imd.gov.in/",
+      "frequency": "Twice weekly bulletins",
+      "languages": ["Hindi", "English", "Regional languages"]
+    },
+    "Kisan Call Center": {
+      "service": "24x7 agricultural advisory service",
+      "contact": "+91-1800-180-1551",
+      "languages": "22 local languages",
+      "services": [
+        "Crop advisory",
+        "Weather information",
+        "Market prices",
+        "Government schemes"
+      ]
+    }
+  }
+}

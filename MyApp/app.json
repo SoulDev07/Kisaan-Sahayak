@@ -1,0 +1,91 @@
+{
+  "expo": {
+    "name": "Kisan Sahayak",
+    "slug": "kisan-sahayak",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash_icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.souldev07.kisansahayak",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs access to location to provide local farming services and market information.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs access to location to provide local farming services and market information.",
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        }
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive_icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.souldev07.kisansahayak"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-asset",
+        {
+          "assets": [
+            "./assets"
+          ]
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableProguardInReleaseBuilds": true,
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location to provide local farming services and market information."
+        }
+      ],
+      [
+        "./plugins/withCustomArchitectures",
+        {
+          "architectures": [
+            "armeabi-v7a",
+            "arm64-v8a"
+          ]
+        }
+      ],
+      [
+        "./plugins/withGradleCache",
+        {
+          "cacheEnabled": true
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b05aebab-e71d-439c-a864-aac8aac0b2c1"
+      }
+    }
+  }
+}

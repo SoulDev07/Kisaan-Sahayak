@@ -1,0 +1,6 @@
+myenv/
+.env
+creds_gcp.json
+creds_gcpO.json
+serviceAccountKey.json
+

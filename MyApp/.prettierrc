@@ -1,0 +1,9 @@
+{
+  "bracketSpacing": true,
+  "parser": "babel",
+  "printWidth": 130,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false
+}

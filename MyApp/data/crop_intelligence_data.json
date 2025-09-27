@@ -1,0 +1,327 @@
+{
+  "crop_recommendations": {
+    "current_season": "monsoon",
+    "location": "Maharashtra, Pune",
+    "last_updated": "2025-07-25T10:30:00Z",
+    "ideal_crops": [
+      {
+        "crop_name": "Rice (Paddy)",
+        "confidence_score": 95,
+        "growth_duration": "120-140 days",
+        "expected_yield": "4-6 tons/hectare",
+        "investment_required": "₹25,000-35,000/hectare",
+        "market_price": "₹2,200-2,800/quintal",
+        "weather_requirements": {
+          "temperature": "25-35°C",
+          "rainfall": "1000-1500mm",
+          "humidity": "70-80%",
+          "soil_moisture": "85-95%"
+        },
+        "farming_techniques": [
+          {
+            "technique": "SRI Method (System of Rice Intensification)",
+            "description": "Uses 30% less water, increases yield by 20-30%",
+            "success_rate": "85%",
+            "farmers_using": 1250
+          },
+          {
+            "technique": "Direct Seeded Rice (DSR)",
+            "description": "No transplanting needed, saves labor cost",
+            "success_rate": "78%",
+            "farmers_using": 890
+          }
+        ],
+        "soil_compatibility": ["Clay", "Loamy", "Alluvial"],
+        "disease_risk": "Medium",
+        "water_requirement": "High",
+        "suitable_districts": ["Pune", "Nashik", "Ahmednagar", "Solapur"]
+      },
+      {
+        "crop_name": "Sugarcane",
+        "confidence_score": 88,
+        "growth_duration": "12-18 months",
+        "expected_yield": "80-120 tons/hectare",
+        "investment_required": "₹80,000-1,20,000/hectare",
+        "market_price": "₹3,200-3,800/ton",
+        "weather_requirements": {
+          "temperature": "20-35°C",
+          "rainfall": "1200-1800mm",
+          "humidity": "75-85%",
+          "soil_moisture": "80-90%"
+        },
+        "farming_techniques": [
+          {
+            "technique": "Drip Irrigation with Fertigation",
+            "description": "Saves 40% water, increases sugar content",
+            "success_rate": "92%",
+            "farmers_using": 2100
+          },
+          {
+            "technique": "Vertical Planting Method",
+            "description": "20% more yield in same area",
+            "success_rate": "87%",
+            "farmers_using": 650
+          }
+        ],
+        "soil_compatibility": ["Deep Black", "Red", "Laterite"],
+        "disease_risk": "Low",
+        "water_requirement": "Very High",
+        "suitable_districts": ["Kolhapur", "Sangli", "Pune", "Ahmednagar"]
+      },
+      {
+        "crop_name": "Cotton",
+        "confidence_score": 82,
+        "growth_duration": "180-200 days",
+        "expected_yield": "15-25 quintals/hectare",
+        "investment_required": "₹40,000-60,000/hectare",
+        "market_price": "₹5,500-7,200/quintal",
+        "weather_requirements": {
+          "temperature": "21-35°C",
+          "rainfall": "600-1200mm",
+          "humidity": "60-70%",
+          "soil_moisture": "70-85%"
+        },
+        "farming_techniques": [
+          {
+            "technique": "High Density Planting System (HDPS)",
+            "description": "More plants per hectare, 15-20% higher yield",
+            "success_rate": "80%",
+            "farmers_using": 1850
+          },
+          {
+            "technique": "Integrated Pest Management (IPM)",
+            "description": "Reduces pesticide use by 60%",
+            "success_rate": "88%",
+            "farmers_using": 2200
+          }
+        ],
+        "soil_compatibility": ["Black Cotton", "Red", "Alluvial"],
+        "disease_risk": "High",
+        "water_requirement": "Medium",
+        "suitable_districts": ["Yavatmal", "Nagpur", "Akola", "Washim"]
+      }
+    ]
+  },
+  "weather_patterns": {
+    "historical_data": [
+      {
+        "year": 2024,
+        "season": "Monsoon",
+        "rainfall": "1180mm",
+        "avg_temperature": "28.5°C",
+        "successful_crops": ["Rice", "Sugarcane", "Maize"],
+        "farmer_practices": [
+          {
+            "practice": "Rainwater Harvesting",
+            "adoption_rate": "68%",
+            "yield_improvement": "15-20%"
+          },
+          {
+            "practice": "Mixed Cropping",
+            "adoption_rate": "45%",
+            "yield_improvement": "25-30%"
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "season": "Monsoon",
+        "rainfall": "950mm",
+        "avg_temperature": "29.8°C",
+        "successful_crops": ["Cotton", "Soybean", "Jowar"],
+        "farmer_practices": [
+          {
+            "practice": "Drought-Resistant Varieties",
+            "adoption_rate": "72%",
+            "yield_improvement": "20-25%"
+          },
+          {
+            "practice": "Mulching",
+            "adoption_rate": "38%",
+            "yield_improvement": "18-22%"
+          }
+        ]
+      },
+      {
+        "year": 2022,
+        "season": "Monsoon",
+        "rainfall": "1350mm",
+        "avg_temperature": "27.2°C",
+        "successful_crops": ["Rice", "Sugarcane", "Banana"],
+        "farmer_practices": [
+          {
+            "practice": "System of Rice Intensification",
+            "adoption_rate": "55%",
+            "yield_improvement": "30-35%"
+          },
+          {
+            "practice": "Organic Farming",
+            "adoption_rate": "28%",
+            "yield_improvement": "12-18%"
+          }
+        ]
+      }
+    ]
+  },
+  "farming_techniques": {
+    "modern_methods": [
+      {
+        "name": "Vertical Farming",
+        "description": "Growing crops in vertically stacked layers",
+        "best_for": ["Leafy Greens", "Herbs", "Strawberries"],
+        "investment": "₹5,00,000-15,00,000/unit",
+        "space_efficiency": "95% space saving",
+        "yield_increase": "4-6 times higher",
+        "water_saving": "95% water conservation",
+        "success_stories": [
+          {
+            "farmer": "Rajesh Patil, Pune",
+            "crop": "Lettuce",
+            "result": "6x yield, ₹2L profit in 6 months"
+          }
+        ],
+        "requirements": ["Controlled Environment", "LED Lighting", "Hydroponic System"]
+      },
+      {
+        "name": "Precision Agriculture",
+        "description": "Using GPS, sensors, and data analytics for farming",
+        "best_for": ["Wheat", "Rice", "Cotton", "Maize"],
+        "investment": "₹2,00,000-5,00,000/farm",
+        "efficiency_gain": "30-40% resource optimization",
+        "yield_increase": "15-25% higher output",
+        "cost_reduction": "20-30% input cost saving",
+        "success_stories": [
+          {
+            "farmer": "Amit Sharma, Nashik",
+            "crop": "Grapes",
+            "result": "40% water saving, premium quality export"
+          }
+        ],
+        "requirements": ["Soil Sensors", "GPS Tractors", "Data Analytics"]
+      },
+      {
+        "name": "Hydroponics",
+        "description": "Soilless cultivation using nutrient solutions",
+        "best_for": ["Tomatoes", "Cucumbers", "Bell Peppers", "Herbs"],
+        "investment": "₹3,00,000-8,00,000/greenhouse",
+        "space_efficiency": "80% space saving",
+        "yield_increase": "3-5 times higher",
+        "water_saving": "90% water conservation",
+        "success_stories": [
+          {
+            "farmer": "Priya Desai, Mumbai",
+            "crop": "Cherry Tomatoes",
+            "result": "Year-round production, ₹15L annual income"
+          }
+        ],
+        "requirements": ["Greenhouse", "Nutrient Solutions", "pH Control Systems"]
+      },
+      {
+        "name": "Integrated Farming Systems",
+        "description": "Combining crops, livestock, and aquaculture",
+        "best_for": ["Mixed Farming", "Dairy + Crops", "Fish + Rice"],
+        "investment": "₹1,50,000-4,00,000/setup",
+        "resource_efficiency": "60% better resource utilization",
+        "income_diversification": "3-4 income sources",
+        "risk_reduction": "50% reduced market risk",
+        "success_stories": [
+          {
+            "farmer": "Suresh Kumar, Aurangabad",
+            "system": "Dairy + Vegetable farming",
+            "result": "₹8L annual income, reduced feed costs"
+          }
+        ],
+        "requirements": ["Land Planning", "Water Management", "Skill Development"]
+      }
+    ]
+  },
+  "soil_crop_matrix": {
+    "Black Cotton Soil": {
+      "characteristics": {
+        "pH": "7.5-8.5",
+        "organic_matter": "0.5-1.2%",
+        "water_holding_capacity": "High",
+        "drainage": "Poor to moderate"
+      },
+      "best_crops": ["Cotton", "Sugarcane", "Jowar", "Wheat"],
+      "management_tips": [
+        "Deep plowing before monsoon",
+        "Add organic matter to improve drainage",
+        "Avoid cultivation when wet"
+      ]
+    },
+    "Red Soil": {
+      "characteristics": {
+        "pH": "5.5-7.0",
+        "organic_matter": "0.3-0.8%",
+        "water_holding_capacity": "Low to moderate",
+        "drainage": "Good"
+      },
+      "best_crops": ["Groundnut", "Millets", "Pulses", "Coconut"],
+      "management_tips": [
+        "Regular addition of organic manure",
+        "Lime application to reduce acidity",
+        "Mulching to retain moisture"
+      ]
+    },
+    "Alluvial Soil": {
+      "characteristics": {
+        "pH": "6.0-8.0",
+        "organic_matter": "1.0-2.5%",
+        "water_holding_capacity": "Moderate to high",
+        "drainage": "Good"
+      },
+      "best_crops": ["Rice", "Wheat", "Maize", "Vegetables"],
+      "management_tips": [
+        "Balanced fertilizer application",
+        "Proper water management",
+        "Crop rotation for soil health"
+      ]
+    }
+  },
+  "market_intelligence": {
+    "price_trends": [
+      {
+        "crop": "Rice",
+        "current_price": "₹2,400/quintal",
+        "price_trend": "stable",
+        "expected_harvest_price": "₹2,600-2,800/quintal",
+        "demand_forecast": "High"
+      },
+      {
+        "crop": "Cotton",
+        "current_price": "₹6,200/quintal",
+        "price_trend": "increasing",
+        "expected_harvest_price": "₹6,800-7,500/quintal",
+        "demand_forecast": "Very High"
+      },
+      {
+        "crop": "Sugarcane",
+        "current_price": "₹3,400/ton",
+        "price_trend": "stable",
+        "expected_harvest_price": "₹3,600-3,900/ton",
+        "demand_forecast": "Moderate"
+      }
+    ]
+  },
+  "government_schemes": [
+    {
+      "scheme_name": "PM Kisan Samman Nidhi",
+      "benefit": "₹6,000/year direct cash transfer",
+      "eligibility": "All farmers with cultivable land",
+      "application_link": "https://pmkisan.gov.in"
+    },
+    {
+      "scheme_name": "Pradhan Mantri Fasal Bima Yojana",
+      "benefit": "Crop insurance with 2% premium",
+      "eligibility": "All farmers growing notified crops",
+      "application_link": "https://pmfby.gov.in"
+    },
+    {
+      "scheme_name": "Soil Health Card Scheme",
+      "benefit": "Free soil testing and recommendations",
+      "eligibility": "All farmers",
+      "application_link": "https://soilhealth.dac.gov.in"
+    }
+  ]
+}

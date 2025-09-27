@@ -1,0 +1,68 @@
+{
+  "data": {
+    "farmer_management": {
+      "sample_farmer_id": "farmer_001",
+      "routes": [
+        "/farmer/{farmer_id}",
+        "/farmer/{farmer_id}/profile",
+        "/farmer/{farmer_id}/crops",
+        "/farmer/{farmer_id}/livestock",
+        "/farmer/{farmer_id}/calendar",
+        "/farmer/{farmer_id}/market"
+      ]
+    },
+    "weather_routes": {
+      "sample_locations": [
+        {
+          "city": "Pune,IN",
+          "lat": 18.52,
+          "lon": 73.86
+        },
+        {
+          "city": "Mumbai,IN",
+          "lat": 19.07,
+          "lon": 72.87
+        },
+        {
+          "city": "Delhi,IN",
+          "lat": 28.61,
+          "lon": 77.2
+        }
+      ],
+      "routes": [
+        "/weather/city?city={city}",
+        "/weather/coords?lat={lat}&lon={lon}",
+        "/weather/forecast/city?city={city}",
+        "/weather/forecast/coords?lat={lat}&lon={lon}"
+      ]
+    },
+    "crop_cycle_routes": {
+      "sample_crops": [
+        "wheat",
+        "rice",
+        "cotton",
+        "sugarcane"
+      ],
+      "routes": [
+        "/crop-cycle/corporate-buyers/{crop}",
+        "/crop-cycle/loan-schemes",
+        "/crop-cycle/insurance-plans",
+        "/crop-cycle/certifications",
+        "/crop-cycle/solar-schemes",
+        "/crop-cycle/government-schemes"
+      ]
+    },
+    "rental_routes": {
+      "sample_farmer_id": "farmer_001",
+      "routes": [
+        "/rental/activity?farmerId={farmer_id}",
+        "/rental/featured?farmerId={farmer_id}",
+        "/rental/bookings?farmerId={farmer_id}",
+        "/rental/earnings?farmerId={farmer_id}"
+      ]
+    }
+  },
+  "source": "sample_templates",
+  "description": "Sample data templates for parameterized routes",
+  "last_updated": "2025-07-26T19:23:29.574752"
+}

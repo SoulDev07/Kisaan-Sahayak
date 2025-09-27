@@ -1,0 +1,10 @@
+.venv
+sql_app.db
+creds_gcp.json
+creds
+.env
+myenv/
+*pyc
+__pycache
+.env/
+myenv/

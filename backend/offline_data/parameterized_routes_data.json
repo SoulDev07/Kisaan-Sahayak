@@ -1,0 +1,318 @@
+{
+  "data": {
+    "weather_by_city": {
+      "Pune,IN": {
+        "coord": {
+          "lon": 73.8553,
+          "lat": 18.5196
+        },
+        "weather": [
+          {
+            "id": 501,
+            "main": "Rain",
+            "description": "moderate rain",
+            "icon": "10n"
+          }
+        ],
+        "base": "stations",
+        "main": {
+          "temp": 22.83,
+          "feels_like": 23.62,
+          "temp_min": 22.83,
+          "temp_max": 22.83,
+          "pressure": 1004,
+          "humidity": 94,
+          "sea_level": 1004,
+          "grnd_level": 931
+        },
+        "visibility": 4378,
+        "wind": {
+          "speed": 5.32,
+          "deg": 256,
+          "gust": 12.63
+        },
+        "rain": {
+          "1h": 1.15
+        },
+        "clouds": {
+          "all": 100
+        },
+        "dt": 1753537903,
+        "sys": {
+          "country": "IN",
+          "sunrise": 1753490403,
+          "sunset": 1753537312
+        },
+        "timezone": 19800,
+        "id": 1259229,
+        "name": "Pune",
+        "cod": 200
+      },
+      "Mumbai,IN": {
+        "coord": {
+          "lon": 72.8479,
+          "lat": 19.0144
+        },
+        "weather": [
+          {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04n"
+          }
+        ],
+        "base": "stations",
+        "main": {
+          "temp": 27.17,
+          "feels_like": 30.55,
+          "temp_min": 27.17,
+          "temp_max": 27.17,
+          "pressure": 1003,
+          "humidity": 84,
+          "sea_level": 1003,
+          "grnd_level": 1002
+        },
+        "visibility": 9784,
+        "wind": {
+          "speed": 9.73,
+          "deg": 254,
+          "gust": 11.99
+        },
+        "clouds": {
+          "all": 100
+        },
+        "dt": 1753537784,
+        "sys": {
+          "country": "IN",
+          "sunrise": 1753490597,
+          "sunset": 1753537601
+        },
+        "timezone": 19800,
+        "id": 1275339,
+        "name": "Mumbai",
+        "cod": 200
+      },
+      "Delhi,IN": {
+        "coord": {
+          "lon": 77.2167,
+          "lat": 28.6667
+        },
+        "weather": [
+          {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02n"
+          }
+        ],
+        "base": "stations",
+        "main": {
+          "temp": 34.77,
+          "feels_like": 39.39,
+          "temp_min": 34.77,
+          "temp_max": 34.77,
+          "pressure": 995,
+          "humidity": 48,
+          "sea_level": 995,
+          "grnd_level": 970
+        },
+        "visibility": 10000,
+        "wind": {
+          "speed": 1.73,
+          "deg": 143,
+          "gust": 2.03
+        },
+        "clouds": {
+          "all": 18
+        },
+        "dt": 1753537924,
+        "sys": {
+          "country": "IN",
+          "sunrise": 1753488534,
+          "sunset": 1753537567
+        },
+        "timezone": 19800,
+        "id": 1273294,
+        "name": "Delhi",
+        "cod": 200
+      }
+    },
+    "crop_cycle": {
+      "loan-schemes": {
+        "status": "success",
+        "schemes": [
+          {
+            "logo": "💰",
+            "documents": [
+              "Business plan",
+              "Income certificate",
+              "Bank statements",
+              "Land documents"
+            ],
+            "website": "https://mudra.org.in/",
+            "categories": {
+              "Shishu": "Up to ₹50,000",
+              "Tarun": "₹5,00,001 to ₹10,00,000",
+              "Kishor": "₹50,001 to ₹5,00,000"
+            },
+            "interestRate": "8.5-12% (varies by bank)",
+            "farmers": 3000000,
+            "contact": "+91-1800-180-1111",
+            "subsidy": "No direct subsidy, but lower interest rates for priority sectors",
+            "eligibility": "Small & marginal farmers, agri-allied activities",
+            "maxAmount": "₹10,00,000",
+            "processingTime": "10-20 days",
+            "rating": 4.5,
+            "name": "Mudra Agricultural Loan"
+          },
+          {
+            "website": "https://pmkisan.gov.in/",
+            "benefits": [
+              "Revolving credit facility",
+              "No collateral for amounts up to ₹1.6 lakh",
+              "Flexible repayment",
+              "Crop insurance linkage"
+            ],
+            "interestRate": "7% (with 3% interest subvention)",
+            "farmers": 8000000,
+            "subsidy": "Interest subvention up to 3% for timely repayment",
+            "rating": 4.8,
+            "logo": "🏦",
+            "maxAmount": "₹3,00,000",
+            "name": "Kisan Credit Card (KCC)",
+            "application_process": [
+              "Visit nearest bank branch",
+              "Fill KCC application form",
+              "Submit required documents",
+              "Bank verification process",
+              "Card issuance within 14 days"
+            ],
+            "contact": "+91-1800-180-1551",
+            "documents": [
+              "Aadhaar Card",
+              "Land records",
+              "Passport size photo",
+              "Bank account details"
+            ],
+            "processingTime": "7-14 days",
+            "eligibility": "All farmers with land ownership/tenancy rights"
+          }
+        ]
+      },
+      "insurance-plans": {
+        "status": "success",
+        "plans": [
+          {
+            "claim_settlement": "Technology-enabled quick settlement using satellite data",
+            "governmentShare": "Balance premium after farmer's share",
+            "premium": "2% for Kharif, 1.5% for Rabi, 5% for Commercial/Horticultural crops",
+            "website": "https://pmfby.gov.in/",
+            "claimTime": "45 days from harvest",
+            "farmerShare": "2% Kharif, 1.5% Rabi, 5% Commercial crops",
+            "coverage": "Full sum insured against natural calamities",
+            "contact": "+91-1800-180-1551",
+            "farmers": 50000000,
+            "rating": 4.8,
+            "logo": "🏛️",
+            "covered_risks": [
+              "Drought",
+              "Flood",
+              "Hailstorm",
+              "Cyclone",
+              "Fire",
+              "Lightning",
+              "Landslide",
+              "Inundation"
+            ],
+            "name": "Pradhan Mantri Fasal Bima Yojana"
+          }
+        ]
+      },
+      "certifications": {
+        "status": "success",
+        "certifications": [
+          {
+            "name": "Food Safety and Standards Authority of India",
+            "duration": "30-45 days",
+            "website": "https://fssai.gov.in/",
+            "benefits": "Market access, consumer trust, legal compliance",
+            "cost": "₹2,000-10,000 (based on turnover)",
+            "contact": "+91-1800-112-100",
+            "email": "info@fssai.gov.in",
+            "types": [
+              "Basic Registration: <₹12 lakh turnover",
+              "State License: ₹12 lakh - ₹20 crore",
+              "Central License: >₹20 crore"
+            ],
+            "validity": "1-5 years based on license type"
+          },
+          {
+            "name": "India Organic Certification Agency (INDOCERT)",
+            "duration": "3-6 months for initial certification",
+            "requirements": [
+              "3-year conversion period",
+              "Organic system plan",
+              "Record keeping",
+              "No synthetic chemicals"
+            ],
+            "website": "https://indocert.org/",
+            "benefits": "20-30% price premium, export opportunities",
+            "cost": "₹15,000-25,000 (varies by farm size)",
+            "contact": "+91-484-2700337",
+            "email": "info@indocert.org",
+            "validity": "3 years with annual surveillance"
+          }
+        ]
+      },
+      "solar-schemes": {
+        "status": "success",
+        "schemes": [
+          {
+            "components": {
+              "Component C": "Solarization of existing grid-connected pumps",
+              "Component B": "Grid-connected solar power plants on farmland",
+              "Component A": "Solar pumps for irrigation"
+            },
+            "loan": "30% bank loan at 7% interest",
+            "scheme_name": "PM-KUSUM (Pradhan Mantri Kisan Urja Suraksha evam Utthaan Mahabhiyan)",
+            "implementation_agencies": [
+              "MNRE (Ministry of New and Renewable Energy)",
+              "State Nodal Agencies",
+              "Empaneled vendors"
+            ],
+            "website": "https://mnre.gov.in/solar/schemes/",
+            "contact": "+91-1800-180-1551",
+            "subsidy": "60% Central + State Government",
+            "farmer_contribution": "10%"
+          }
+        ]
+      },
+      "government-schemes": {
+        "status": "success",
+        "schemes": [
+          {
+            "contact": "+91-1800-180-1551",
+            "components": [
+              "Accelerated Irrigation Benefit Programme (AIBP)",
+              "Har Khet Ko Pani",
+              "Per Drop More Crop"
+            ],
+            "subsidy": "55% for general farmers, 75% for SC/ST farmers",
+            "objective": "Expand cultivated area under assured irrigation",
+            "name": "Pradhan Mantri Krishi Sinchai Yojana (PMKSY)"
+          },
+          {
+            "farmer_group_size": "Minimum 20 farmers",
+            "contact": "+91-1800-180-1551",
+            "cluster_size": "50 hectares minimum",
+            "objective": "Promote organic farming",
+            "financial_assistance": "₹50,000 per hectare over 3 years",
+            "name": "Paramparagat Krishi Vikas Yojana (PKVY)"
+          }
+        ]
+      }
+    }
+  },
+  "source": "parameterized_api_routes",
+  "last_updated": "2025-07-26T19:23:35.396400"
+}
