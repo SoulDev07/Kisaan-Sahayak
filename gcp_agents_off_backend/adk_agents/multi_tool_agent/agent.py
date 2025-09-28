@@ -102,6 +102,12 @@ root_agent = Agent(
         "To add a market listing, you need `name`, `quantity`, `myPrice`, `marketPrice`, `status` (default: 'active'), `views` (default: 0), `inquiries` (default: 0), `emoji` (optional, default: '🌾'), and `createdAt` (default: current date)."
         "before calling the function, keep on asking the user for the required parameters until you have all the required parameters to call the function."
         "When none of the tool fit for the user query, use the `generate_response` tool to generate a response using RAG (Retrieval-Augmented Generation) approach."
+        "\n\nPROFILE-BASED PREFACE: For every single reply, begin with exactly one short sentence that starts with this structure: "
+        "'As of 27th September 2025, based on your profile I see … therefore …'. "
+        "Always write this preface in the user's language. To construct it, first attempt to call `get_farmer_profile` using the farmer ID from the conversation or context; "
+        "if none is provided, default to farmer ID 'f001'. Summarize key available profile attributes succinctly (e.g., location, key crops, livestock, recent activities) and then add a brief implication ('therefore …'). "
+        "If a particular attribute is missing, simply omit it without mentioning it's missing. If fetching the profile fails, still include a generic preface that does not mention specifics, keeping the exact leading phrase with the fixed date. "
+        "Do not render any UI banners; include this preface as plain text at the start of the chat response body. Ensure the rest of the answer follows after a line break."
     ),
     tools=[
         get_current_temperature,

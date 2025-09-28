@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 # Add the current directory to Python path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from services.whatsapp_service import send_text_message
+from backend.services.main import send_text_message
 
 load_dotenv()
 

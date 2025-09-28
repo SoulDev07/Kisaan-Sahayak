@@ -148,7 +148,7 @@ const getKissanAIResponse = async (message, context, t) => {
   while (attempt <= maxRetries) {
     try {
       attempt += 1;
-      const response = await axios.post(`http://10.100.155.236:8001/agent`, payload, { timeout: 120000 });
+      const response = await axios.post(`http://10.67.206.37:8001/agent`, payload, { timeout: 120000 });
       if (response.data && response.data.response_text) {
         return response.data.response_text;
       }
@@ -524,6 +524,262 @@ const FeaturesView = ({ navigation }) => {
   );
 };
 
+// --- Today's Actions Component ---
+const TodayActions = ({ onDismiss, onActionSelect }) => {
+  const { theme, isDark } = useTheme();
+  const { t } = useTranslation();
+  const [loading, setLoading] = useState(true);
+  const [regenerating, setRegenerating] = useState(false);
+  const [actions, setActions] = useState([]);
+  const [error, setError] = useState(null);
+  const FARMER_ID = 'f001';
+  const cacheKey = `today_actions_${new Date().toISOString().split('T')[0]}`;
+
+  const iconForAction = (label = '') => {
+    const l = label.toLowerCase();
+    if (/(soil|moisture)/.test(l)) return <MaterialCommunityIcons name="water" size={18} color={theme.colors.primary} />;
+    if (/(pest|disease|scan)/.test(l)) return <MaterialCommunityIcons name="bug-outline" size={18} color="#ef4444" />;
+    if (/(market|price|sell)/.test(l)) return <MaterialCommunityIcons name="storefront-outline" size={18} color="#f59e0b" />;
+    if (/(irrigat|water)/.test(l)) return <MaterialCommunityIcons name="sprinkler-variant" size={18} color="#38bdf8" />;
+    if (/(finance|loan|upi)/.test(l)) return <MaterialCommunityIcons name="bank" size={18} color="#6366f1" />;
+    if (/(document|paper|form)/.test(l)) return <MaterialCommunityIcons name="file-document" size={18} color="#f59e0b" />;
+    if (/(rental|equipment|tractor)/.test(l)) return <MaterialCommunityIcons name="tractor-variant" size={18} color="#f59e0b" />;
+    return <MaterialCommunityIcons name="lightbulb-on-outline" size={18} color={theme.colors.primary} />;
+  };
+
+  const parseActions = (raw) => {
+    try {
+      if (!raw) return [];
+      if (typeof raw === 'string') {
+        // Extract first JSON object if model added extra text
+        const match = raw.match(/\{[\s\S]*\}/);
+        if (match) raw = match[0];
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed?.today_actions)) return parsed.today_actions.slice(0, 3);
+      } else if (typeof raw === 'object') {
+        if (Array.isArray(raw.today_actions)) return raw.today_actions.slice(0, 3);
+      }
+    } catch (e) {
+      // silent
+    }
+    return [];
+  };
+
+  // Heuristic fallback actions when AI fails or returns empty
+  const buildFallbackActions = ({ profile = {}, crops = [], livestock = [], todayEvents = [] }) => {
+    const list = [];
+    const harvestCrop = crops.find(c => /harvest|flower|mature/i.test(c?.stage || c?.status || ''));
+    if (harvestCrop) {
+      list.push({
+        label: `Check ${harvestCrop.name || harvestCrop.cropName || 'crop'} harvest readiness`,
+        reason: 'Avoid quality & yield loss with timely harvest.',
+        screen: 'CropDoctor'
+      });
+    }
+    if (todayEvents.length > 0) {
+      list.push({
+        label: "Review today's scheduled farm tasks",
+        reason: `You have ${todayEvents.length} planned task(s) today. Prioritize critical ones.`,
+        screen: 'CalenderScreen'
+      });
+    }
+    if (livestock.length > 0) {
+      list.push({
+        label: 'Inspect livestock health & feed logs',
+        reason: 'Early issue detection lowers treatment cost.',
+        screen: 'CattleScreen'
+      });
+    }
+    if (list.length < 3) {
+      list.push({
+        label: 'Record crop growth observations',
+        reason: 'Notes improve advisory accuracy & planning.',
+        screen: 'CropIntelligenceScreenNew'
+      });
+    }
+    if (list.length < 3) {
+      list.push({
+        label: 'Check market prices before selling',
+        reason: 'Better timing can improve revenue.',
+        screen: 'MarketplaceScreen'
+      });
+    }
+    return list.slice(0,3);
+  };
+
+  const buildAndFetch = async (opts = { fromRefresh: false }) => {
+    try {
+      if (!opts.fromRefresh) setLoading(true); else setRegenerating(true);
+      setError(null);
+
+      // Attempt cache first
+      const cached = await AsyncStorage.getItem(cacheKey);
+      if (cached && !opts.fromRefresh) {
+        const parsed = JSON.parse(cached);
+        setActions(parsed);
+        setLoading(false);
+        return;
+      }
+
+      // Parallel fetch context
+      const [calRes, profileRes, cropsRes, livestockRes] = await Promise.all([
+        fetch(`${NetworkConfig.API_BASE}/farmer/${FARMER_ID}/calendar`).catch(() => null),
+        fetch(`${NetworkConfig.API_BASE}/farmer/${FARMER_ID}/profile`).catch(() => null),
+        fetch(`${NetworkConfig.API_BASE}/farmer/${FARMER_ID}/crops`).catch(() => null),
+        fetch(`${NetworkConfig.API_BASE}/farmer/${FARMER_ID}/livestock`).catch(() => null),
+      ]);
+      const calendarEvents = calRes?.ok ? await calRes.json() : [];
+      const profile = profileRes?.ok ? await profileRes.json() : {};
+      const crops = cropsRes?.ok ? await cropsRes.json() : [];
+      const livestock = livestockRes?.ok ? await livestockRes.json() : [];
+
+      const todayISO = new Date().toISOString().split('T')[0];
+      const todayEvents = calendarEvents.filter(ev => ev.date === todayISO);
+      const calendarLines = todayEvents.map(ev => `- ${ev.time || ''} ${ev.task || ''} (${ev.details || ''})`).join('\n') || 'No events';
+      const cropSummary = crops.map(c => `${c.name || c.cropName || 'Crop'}:${c.stage || c.status || ''}`).slice(0, 5).join(', ') || 'No crop data';
+      const livestockSummary = livestock.map(l => l.type || l.animal || l.name || 'Animal').slice(0, 5).join(', ') || 'None';
+      const profileBits = [profile?.village && `Village:${profile.village}`, profile?.farmSize && `FarmSize:${profile.farmSize}`, profile?.language && `Lang:${profile.language}`].filter(Boolean).join(', ') || 'Minimal profile info';
+
+  const instruction = `You are an assistant generating up to 3 HIGH-VALUE, FARM-DAY SPECIFIC TASKS or INSIGHTS the farmer should EXECUTE or BE AWARE OF TODAY (${todayISO}).\nReturn STRICT JSON ONLY in this shape: {"today_actions":[{"label":"Action (<=30 chars, imperative or concise insight)","reason":"Why it matters (<=80 chars)","screen":"OptionalScreenName"}]}\nRules:\n - NO user questions or prompts; only direct actionable tasks or insights\n - Diversity: include operations, risk mitigation, and opportunity if possible\n - Use screen only if it helps accomplish task (CalenderScreen, CropDoctor, MarketplaceScreen, CropIntelligenceScreenNew, UPI, RentalSystemScreen, DocumentAgentScreen, CattleScreen)\n - If context sparse, provide universally valuable farm management tasks\n - Output ONLY JSON. No commentary.\nContext:\nPROFILE: ${profileBits}\nCROPS: ${cropSummary}\nLIVESTOCK: ${livestockSummary}\nTODAY_CALENDAR:\n${calendarLines}`;
+
+      const payload = {
+        user_prompt: instruction,
+        metadata: { mode: 'today_actions_v2', farmer_id: FARMER_ID },
+        user_id: FARMER_ID,
+        session_id: `today-${FARMER_ID}`,
+      };
+  const aiResp = await axios.post(`http://10.100.155.236:8001/agent`, payload, { timeout: 300000 });
+      let parsedActions = parseActions(aiResp?.data?.response_text || aiResp?.data);
+      parsedActions = (parsedActions || []).map(a => ({
+        label: a.label || a.title || a.task || a.name || 'Farm task',
+        reason: a.reason || a.why || a.insight || '',
+        screen: a.screen
+      })).filter(a => a.label).slice(0,3);
+      if (!parsedActions || parsedActions.length === 0) {
+        parsedActions = buildFallbackActions({ profile, crops, livestock, todayEvents });
+      }
+      setActions(parsedActions);
+      await AsyncStorage.setItem(cacheKey, JSON.stringify(parsedActions));
+      setLoading(false); setRegenerating(false);
+    } catch (e) {
+      // Attempt fallback
+      try {
+        const cached = await AsyncStorage.getItem(cacheKey);
+        if (cached) {
+          const parsed = JSON.parse(cached);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            setActions(parsed);
+          } else {
+            setActions(buildFallbackActions({}));
+          }
+        } else {
+          setActions(buildFallbackActions({}));
+        }
+      } catch(_) {
+        setActions(buildFallbackActions({}));
+      }
+      // setError('Network issue – showing fallback tasks');
+      setLoading(false); setRegenerating(false);
+    }
+  };
+
+  useEffect(() => { buildAndFetch(); }, []);
+
+  const refresh = () => buildAndFetch({ fromRefresh: true });
+
+  const Placeholder = () => (
+    <View style={[styles.todayActionCard, { borderColor: theme.colors.border, backgroundColor: theme.colors.surface, opacity: 0.5 }]}>      
+      <View style={{ width: 50, height: 12, backgroundColor: theme.colors.border, borderRadius: 6, marginBottom: 4 }} />
+      <View style={{ width: 70, height: 10, backgroundColor: theme.colors.border, borderRadius: 6 }} />
+    </View>
+  );
+
+  return (
+    <View style={[styles.todayActionsContainer, { borderColor: theme.colors.border, backgroundColor: isDark ? '#1f1f1f' : theme.colors.card }]}>      
+      <View style={styles.todayActionsHeaderRow}>
+        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+          <MaterialCommunityIcons name="calendar-today" size={20} color={theme.colors.primary} style={{ marginRight: 6 }} />
+          <Text style={[styles.todayActionsTitle, { color: theme.colors.text }]}>{t('today_actions.title', "Today's Recommendations")}</Text>
+          {regenerating && <MaterialCommunityIcons name="loading" size={18} color={theme.colors.textSecondary} style={{ marginLeft: 6 }} />}
+        </View>
+        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+          <TouchableOpacity onPress={refresh} style={{ marginRight: 12 }} accessibilityLabel="Refresh actions">
+            <MaterialCommunityIcons name="refresh" size={20} color={theme.colors.textSecondary} />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={onDismiss} accessibilityLabel="Dismiss today's actions">
+            <MaterialCommunityIcons name="close" size={22} color={theme.colors.textSecondary} />
+          </TouchableOpacity>
+        </View>
+      </View>
+      {error && (
+        <Text style={{ color: theme.colors.danger, fontSize: 12, marginBottom: 6 }} numberOfLines={2}>{error}</Text>
+      )}
+      {loading ? (
+        <View style={styles.todayActionsCardsRow}>
+          <Placeholder />
+          <Placeholder />
+          <Placeholder />
+        </View>
+      ) : actions.length === 0 ? (
+        <Text style={{ color: theme.colors.textSecondary, fontSize: 13 }}>
+          {t('today_actions.none', 'No specific tasks right now. Explore features below!')}
+        </Text>
+      ) : (
+        <View style={styles.todayActionsCardsRow}>
+          {actions.map((a, idx) => {
+            const count = actions.length; // 1..3
+            // dynamic width: 1 -> full, 2 -> 48% each, 3 -> ~31% each
+            const widthPct = count === 1 ? '100%' : count === 2 ? '48%' : '31%';
+            return (
+              <TouchableOpacity
+                key={idx}
+                accessibilityLabel={`Today's task ${idx + 1}: ${a.label}`}
+                style={[
+                  styles.todayActionCard,
+                  {
+                    borderColor: theme.colors.border,
+                    backgroundColor: theme.colors.surface,
+                    width: widthPct,
+                  },
+                ]}
+                onPress={() => onActionSelect && onActionSelect(a)}
+                activeOpacity={0.85}
+              >
+                <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 6 }}>
+                  {iconForAction(a.label || a.title || '')}
+                  <Text
+                    style={[styles.todayActionLabel, { color: theme.colors.text, marginLeft: 8, flexShrink: 1 }]}
+                    numberOfLines={2}
+                    ellipsizeMode="tail"
+                  >
+                    {a.label || a.title || a.name || t('today_actions.action', 'Action')}
+                  </Text>
+                </View>
+                {!!a.reason && (
+                  <Text
+                    style={[styles.todayActionReason, { color: theme.colors.textSecondary }]}
+                    numberOfLines={3}
+                    ellipsizeMode="tail"
+                  >
+                    {a.reason}
+                  </Text>
+                )}
+                {a.screen && (
+                  <View style={{ marginTop: 4 }}>
+                    <Text style={{ fontSize: 10, color: theme.colors.textSecondary }} numberOfLines={1}>
+                      {a.screen}
+                    </Text>
+                  </View>
+                )}
+              </TouchableOpacity>
+            );
+          })}
+        </View>
+      )}
+    </View>
+  );
+};
+
 // --- Main Chat Screen Component ---
 export default function VoiceChatInputScreen({ navigation, route }) {
   const { theme } = useTheme();
@@ -536,6 +792,7 @@ export default function VoiceChatInputScreen({ navigation, route }) {
   const flatListRef = useRef();
   const [allContext, setAllContext] = useState({ weather: '', soil: '', market: '' });
   const [attachedImage, setAttachedImage] = useState(null);
+  const [showTodayActions, setShowTodayActions] = useState(true);
 
   const [showInteractiveGuide, setShowInteractiveGuide] = useState(false);
   const [onboardingStep, setOnboardingStep] = useState(0);
@@ -777,6 +1034,8 @@ export default function VoiceChatInputScreen({ navigation, route }) {
 
     const userMessage = { sender: 'user', ...msgToSend };
     setChatHistory((prev) => [...prev, userMessage]);
+  // Hide today's actions once user begins chatting
+  if (showTodayActions) setShowTodayActions(false);
     setInputValue('');
     setAttachedImage(null);
     setIsThinking(true);
@@ -895,12 +1154,41 @@ export default function VoiceChatInputScreen({ navigation, route }) {
         >
           <View style={{ flex: 1 }}>
             {chatHistory.length === 0 ? (
-              <FeaturesView navigation={navigation} />
+              <>
+                {showTodayActions && (
+                  <TodayActions
+                    onDismiss={() => setShowTodayActions(false)}
+                    onActionSelect={(a) => {
+                      if (a.screen) {
+                        try {
+                          navigation.navigate(a.screen);
+                        } catch (e) {
+                          console.log('Nav error', e);
+                        }
+                        setShowTodayActions(false);
+                        return;
+                      }
+                      const prompt = a.prompt || a.label || a.title;
+                      if (prompt) {
+                        handleSendMessage({ type: 'text', content: prompt });
+                      }
+                      setShowTodayActions(false);
+                    }}
+                  />
+                )}
+                <FeaturesView navigation={navigation} />
+              </>
             ) : (
               <FlatList
                 ref={flatListRef}
                 data={chatHistory}
-                renderItem={({ item }) => <ChatMessage message={item} chatHistory={chatHistory} />}
+                renderItem={({ item }) => (
+                  <ChatMessage
+                    message={item}
+                    chatHistory={chatHistory}
+                    onQuickAction={handleQuickAction}
+                  />
+                )}
                 keyExtractor={(item, index) => `chat-${index}-${item.type || 'message'}`}
                 style={[styles.chatList, { backgroundColor: theme.colors.background }]}
                 contentContainerStyle={{ paddingHorizontal: 10, paddingBottom: 10 }}
@@ -1423,5 +1711,72 @@ const styles = StyleSheet.create({
   nextButtonText: {
     fontSize: 13,
     fontWeight: 'bold',
+  },
+  // Quick Actions (AI suggested follow-ups)
+  quickActionsContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    marginTop: 12,
+  },
+  quickActionCard: {
+    borderWidth: 1,
+    borderRadius: 14,
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    marginRight: 8,
+    marginBottom: 8,
+    maxWidth: 150,
+  },
+  quickActionLabel: {
+    fontSize: 12,
+    fontWeight: '600',
+  },
+  // Today's Actions styles
+  todayActionsContainer: {
+    width: '92%',
+    alignSelf: 'center',
+    borderWidth: 1,
+    borderRadius: 18,
+    paddingVertical: 14,
+    paddingHorizontal: 16,
+    marginTop: 10,
+    marginBottom: 4,
+  },
+  todayActionsHeaderRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  todayActionsTitle: {
+    fontSize: 18,
+    fontWeight: '700',
+  },
+  todayActionsCardsRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+  },
+  todayActionCard: {
+    borderWidth: 1,
+    borderRadius: 14,
+    paddingVertical: 12,
+    paddingHorizontal: 12,
+    marginBottom: 12,
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOpacity: 0.15,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 3,
+  },
+  todayActionLabel: {
+    fontSize: 13,
+    fontWeight: '600',
+    lineHeight: 16,
+  },
+  todayActionReason: {
+    fontSize: 10,
+    lineHeight: 13,
+    marginTop: 2,
   },
 });

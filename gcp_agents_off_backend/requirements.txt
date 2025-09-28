@@ -9,7 +9,6 @@ beautifulsoup4
 langchain
 langchain-community
 langchain-core
-google-generativeai
 langchain-google-genai
 langdetect
 firebase_admin

@@ -174,7 +174,7 @@ function AppInner() {
               setCurrentRoute(routeName);
             }}
           >
-            <Stack.Navigator initialRouteName="LanguageSelectScreen" screenOptions={{ headerShown: false }}>
+            <Stack.Navigator initialRouteName="ChoiceScreen" screenOptions={{ headerShown: false }}>
               {SCREENS.map((s) => (
                 <Stack.Screen
                   key={s.name}
